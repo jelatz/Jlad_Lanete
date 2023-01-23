@@ -15,4 +15,12 @@ html,body{
   scroll-behavior: smooth !important;
 }
 
+.projects{
+  transition: all .3s ease-in-out;
+}
+
+.projects:hover{
+  transform:scale(2.5);
+}
+
 
