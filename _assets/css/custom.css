@@ -5,13 +5,16 @@
     box-sizing: border-box;
     font-family: 'chakra petch';
 }
-
+section{
+  height: 100vh;
+  width: 100vw;
+}
 p{
     font-family: 'Lato' !important;
 }
 html,body{
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   scroll-behavior: smooth !important;
 }
 
@@ -23,4 +26,66 @@ html,body{
   transform:scale(2.5);
 }
 
+.background:hover{
+  cursor: none;
+}
+
+@media only screen and (min-width:320px){
+  .social-media{
+    flex-direction: row !important;
+    justify-content: center;
+  }
+
+  .navbar-toggler{
+    display: block;
+    position: absolute !important;
+    top: 1rem;
+    left: 14rem !important;
+  }
+  .navbar{
+    display: inline;
+  }
+}
+
+
+@media screen and (min-width:992px){
+  .social-media{
+    flex-direction: column !important;
+  }
+}
+
+@media only screen and (min-width:768px){
+  .social-media{
+    flex-direction: column !important;
+  }
+}
+
+
+@media screen and (max-width:1200px){
+
+  .hamburger{
+    display: block;
+    position: absolute;
+    top: 1rem;
+    /* background-color: red; */
+    left: 15rem;
+  }
+  #home{
+  background-size:cover !important;
+  /* background-image: none !important;  */
+}
+
+}
+@media screen and (max-width:1650px){
+
+}
+
+@media screen and (max-width:576px){
+  #home{
+    background-image: none !important;
+  }
+  .navbar-brand{
+    
+  }
+}
 
