@@ -148,7 +148,18 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js">
     $('.carousel').carousel();
 </script>
+<script>
+const { spawn } = require("child_process");
 
+exports.handler = async (event, context) => {
+    const { stdout, stderr } = await spawn("php", ["-f", "index.php"]);
+
+    return {
+        statusCode: 200,
+        body: stdout
+    };
+}
+</script>
 </body>
 
 </html>
