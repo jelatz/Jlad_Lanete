@@ -125,22 +125,25 @@
     </section>
     <!-- CONTACT -->
     <section id="contact" class="" style="background-color: black;">
+    <?php if (isset($_GET['sent'])) { ?><p class="success alert alert-success"><?php echo $_GET['sent']; ?></p> <?php } ?>
         <div class="container-fluid" style="height: inherit;">
             <div class="row justify-content-center align-items-center" style="height: inherit;">
-                <h1 class="text-white text-center">Send me a message!</h1>
-                <div class="col-lg-5 col-md-6 col-xl-4 p-5 bg-secondary rounded">
-                    <form action="#" method="POST" class="">
-                        <label for="email" class="form-label" style="font-family: 'Lato';">Email Address:</label>
-                        <input type="text" name="email" class="form-control bg-secondary border-white" placeholder="Please enter your email address" style="font-family: 'Lato';" required>
-                        <label for="inquiry" class="form-label" style="font-family: 'Lato';">Inquiry</label>
-                        <textarea name="inquiery" id="inquiry" cols="30" rows="10" class="form-control bg-secondary border-white" style="font-family: 'Lato';"></textarea>
-                        <input type="submit" name="submit" value="Submit" class="mt-4">
+                <h1 class="text-white text-center" style="font-family: 'Lato';">Send me a message!</h1>
+                <div class="col-lg-5 col-md-6 col-xl-4 p-5 rounded" style="background: rgb(39, 39, 46);">
+                    <form action="Back/contact.php" method="POST" class="">
+                        <label for="email" class="form-label" style="font-family: 'Lato'; color: rgb(163, 163, 170);">Email Address:</label>
+                        <input type="text" name="email" id="email" class="form-control border-white" style="font-family: 'Lato'; background-color: rgb(55, 55, 61); color: white;" required>
+                        <label for="inquiry" class="form-label mt-3" style="font-family: 'Lato'; color: rgb(163, 163, 170);">Inquiry</label>
+                        <textarea name="inquiry" id="inquiry" cols="30" rows="10" class="form-control border-white" style="font-family: 'Lato'; background-color: rgb(55, 55, 61); color: white;"></textarea>
+                        <input type="submit" name="submit" value="Submit" class="mt-4 btn" style="color: rgb(163, 163, 170); background-color: rgb(63, 63, 111); caret-color: red;">
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    <script src="../_assets/js/bootstrap.bundle.js"></script>
+    <script src="../_assets/js/bootstrap.bundle.js">
+        
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js">
     $('.carousel').carousel();
