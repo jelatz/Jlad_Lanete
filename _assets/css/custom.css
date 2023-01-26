@@ -4,6 +4,7 @@
 *{
     box-sizing: border-box !important;
     font-family: 'chakra petch';
+    color: white !important;
 }
 section{
   height: 100%;
@@ -32,12 +33,20 @@ html,body{
 } */
 
 @media only screen and (min-width:320px){
-
+ .contact{
+  row-gap: 1.5rem;
+ }
 }
 
 @media only screen and (min-width:768px){
   .medium{
     flex-direction: column !important;
+  }
+}
+
+@media only screen and (min-width:992px){
+  .carousel{
+    width: 50%;
   }
 }
 
