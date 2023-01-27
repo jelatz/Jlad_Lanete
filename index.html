@@ -138,26 +138,26 @@
         </div>
     </section>
     <!-- SERVICES -->
-    <section id="services" class="bg-dark">
-        <div class="container-fluid">     
-            <div class="row justify-content-center align-items-center flex-column gap-5" style="height: 50em;">
-                <div class="col-md-4 text-center">
-                    <h1 class="fw-bolder display-1">My Services</h1>
+    <section id="services" class="bg-dark d-flex align-items-start">
+        <div class="container-fluid mt-5">     
+            <div class="row justify-content-center align-items-center flex-column gap-5 mt-5">
+                <div class="col text-center">
+                    <h1 class="fw-bolder display-1 my-5">My Services</h1>
                 </div>
-                <div class="col-md-8 gap-5 d-flex flex-column text-center align-items-center">
-                    <p class="text-white serv d-block h4" style="font-family: 'Lato';">Web Development Support and
+                <div class="col gap-5 d-flex flex-column text-center align-items-center pb-5">
+                    <p class="text-white serv h4" style="font-family: 'Lato';">Web Development Support and
                         Maintenance</p>
-                    <p class="text-white serv d-block h4" style="font-family: 'Lato';">Web Design</p>
-                    <p class="text-white serv d-block h4" style="font-family: 'Lato';">Web Programming</p>
-                    <p class="text-white serv d-block h4" style="font-family: 'Lato';">Web Optimization</p>
+                    <p class="text-white serv h4" style="font-family: 'Lato';">Web Design</p>
+                    <p class="text-white serv h4" style="font-family: 'Lato';">Web Programming</p>
+                    <p class="text-white serv h4" style="font-family: 'Lato';">Web Optimization</p>
                 </div>
             </div>
         </div>
     </section>
     <!-- CONTACT -->
     <section id="contact" style="background-color: black;">
-        <div class="container-fluid justify-content-center" style="height: inherit;">
-            <div class="row justify-content-center align-items-center text-center contact" style="height: 600px;">
+        <div class="container-fluid justify-content-center pb-5" >
+            <div class="row justify-content-center align-items-center text-center contact">
                 <h1 class="text-center text-white pt-5">Contact Me!</h1>
                 <div class="col-md-3 mt-5">
                     <p class="text-white">+639938859710</p>
@@ -184,7 +184,7 @@
     <script>
         $(document).ready(function () {
             $(".serv").each(function (index) {
-                $(this).hide().delay(1000 * index).fadeIn(1000);
+                $(this).hide().delay(1500 * index).fadeIn(1500);
             });
         });
     </script>
