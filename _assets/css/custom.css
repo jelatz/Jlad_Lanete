@@ -12,8 +12,8 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  /* padding-top: 80px;
+  padding-bottom: 80px; */
   border-bottom: 2px solid rgba(255,255,255, 0.1);
 }
 
