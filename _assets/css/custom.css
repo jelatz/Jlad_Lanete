@@ -6,6 +6,7 @@
     font-family: 'chakra petch';
     color: white !important;
 }
+
 section{
   min-height: 100vh;
   height: 100%;
@@ -20,12 +21,16 @@ section{
 p{
   font-family: 'Lato' !important;
 }
-body{
+
+body
+{
   background-color: black;
 }
+
 html,body{
 scroll-behavior: smooth !important;
 }
+
 html::-webkit-scrollbar{
 display:none;
 }
@@ -42,37 +47,22 @@ display:none;
 .text-brand{
   color: aqua !important;
 }
-#navbarSupportedContent{
+
+#navbarSupportedContent
+{
   background-color: rgba(39, 43, 41, 0.815) !important;
 }
-.form{
+
+.form
+{
   background-color: rgba(39, 43, 41, 0.815);
 }
-.prof{
+
+.prof
+{
   border: 4px solid aqua;
 }
 
-#text{
-  animation: color-change 10s infinite ;
-}
-
-@keyframes color-change {
-  0% {
-  color: #fff;
-  }
-  25%{
-    color: aqua;
-  }
-  50%{
-    color: aqua;
-  }
-  75%{
-    color: aqua;
-  }
-  100%{
-    color: aqua;
-  }
-}
 
 /* SIDEBAR WIDTH = 240PX */
 /* MEDIA QUERIES */
@@ -142,5 +132,5 @@ display:none;
   .work:hover{
     background-color: rgb(71, 73, 90) !important;
   }
- 
+
 }
