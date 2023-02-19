@@ -83,14 +83,40 @@ display:none;
 video{
   width: 90%;
   padding: 10px;
+}
 
+*{
+  font-weight: 600;
 }
 
 
 /* SIDEBAR WIDTH = 240PX */
 /* MEDIA QUERIES */
 @media (min-width:992px){
+  body
+  {
+    background-color: black;
+  }
 
+  *{
+    font-weight: 600;
+  }
+  .skills{
+    transition:transform 0.5s;
+  }
+  .skills:hover{
+    border:2px solid aqua !important;
+    transform: scale(1.4);
+  }
+
+
+  .card{
+    transition:transform 0.5s;
+  }
+  .card:hover{
+    border:2px solid aqua !important;
+    transform: scale(1.07);
+  }
   /* NAVBAR */
   #navbarSupportedContent{
     background-color: transparent !important;
