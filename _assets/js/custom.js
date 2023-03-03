@@ -13,3 +13,15 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+
+const loader = document.querySelector('.spinner-grow');
+
+window.addEventListener('Load', () => {
+  loader.style.opacity = '0';
+
+  setTimeout(() =>{
+    loader.style.display = 'none';
+  },100);
+})
+
