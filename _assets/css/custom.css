@@ -139,8 +139,9 @@ video{
   .navbar .nav-link.active{
     color: darkcyan !important;
   }
-/* //NAVBAR */
-
+.about{
+  text-align: center !important;
+}
 /* CONTENT WRAPPER */
   #content-wrapper{
     padding-left: 240px;
