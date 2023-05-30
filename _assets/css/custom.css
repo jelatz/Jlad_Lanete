@@ -90,7 +90,7 @@ video{
 }
 
 .skills-logos img{
-  width: 70%;
+  width: 100%;
   aspect-ratio: 8/5;
   mix-blend-mode:difference;
   object-fit: contain !important;
