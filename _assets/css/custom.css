@@ -96,6 +96,10 @@ video{
   object-fit: contain !important;
 }
 
+.nav-link:hover{
+  color: cyan !important;
+}
+
 
 /* SIDEBAR WIDTH = 240PX */
 /* MEDIA QUERIES */
