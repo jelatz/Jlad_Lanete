@@ -89,12 +89,7 @@ video{
   font-weight: 600;
 }
 
-.skills-logos img{
-  width: 100%;
-  aspect-ratio: 8/5;
-  mix-blend-mode:difference;
-  object-fit: contain !important;
-}
+
 
 .nav-link:hover{
   color: cyan !important;
@@ -195,4 +190,10 @@ video{
     background-color: rgb(71, 73, 90) !important;
   }
 
+  .skills-logos img{
+    width: 100%;
+    aspect-ratio: 8/5;
+    mix-blend-mode:difference;
+    object-fit: contain !important;
+  }
 }
