@@ -1,14 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Lato&display=swap");
 
-*{
-    box-sizing: border-box !important;
-    font-family: 'chakra petch';
-    /* font-family: 'Times New Roman', Times, serif; */
-    color: white !important;
+* {
+  box-sizing: border-box !important;
+  font-family: "chakra petch";
+  /* font-family: 'Times New Roman', Times, serif; */
+  color: white !important;
 }
 
-section{
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate {
+  animation: moveRightToLeft 5s linear infinite;
+}
+
+section {
   min-height: 100vh;
   height: 100%;
   display: flex;
@@ -16,58 +29,55 @@ section{
   justify-content: center;
   /* padding-top: 80px;
   padding-bottom: 80px; */
-  border-bottom: 2px solid rgba(255,255,255, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-p{
-  font-family: 'Lato' !important;
+p {
+  font-family: "Lato" !important;
 }
 
-body
-{
+body {
   background-color: black;
 }
 
-html,body{
-scroll-behavior: smooth !important;
+html,
+body {
+  scroll-behavior: smooth !important;
 }
 
-html::-webkit-scrollbar{
-display:none;
+html::-webkit-scrollbar {
+  display: none;
 }
 
-.navbar-nav a{
+.navbar-nav a {
   font-size: 700;
   font-weight: bold;
 }
 
-.navbar{
+.navbar {
   background-color: rgba(39, 43, 41, 0.815);
 }
 
-.text-brand{
+.text-brand {
   color: aqua !important;
 }
 
-#navbarSupportedContent
-{
+#navbarSupportedContent {
   background-color: rgba(39, 43, 41, 0.815) !important;
 }
 
-.form
-{
+.form {
   background-color: rgba(39, 43, 41, 0.815);
 }
 
-.prof
-{
+.prof {
   border: 4px solid aqua;
 }
 
-#portLink{
+#portLink {
   position: relative;
 }
-#portLink::after{
+#portLink::after {
   content: "";
   width: 0%;
   height: 2px;
@@ -77,84 +87,86 @@ display:none;
   top: 85%;
   transition: all 0.4s;
 }
-#portLink:hover::after{
+#portLink:hover::after {
   width: 100%;
 }
 
-video{
+video {
   width: 90%;
   padding: 10px;
 }
 
-*{
+* {
   font-weight: 600;
 }
 
-
-
-.nav-link:hover{
+.nav-link:hover {
   color: cyan !important;
 }
 
+.skills-logos img {
+  width: 100%;
+  aspect-ratio: 7/5;
+  mix-blend-mode: difference;
+  object-fit: contain !important;
+}
 
 /* SIDEBAR WIDTH = 240PX */
 /* MEDIA QUERIES */
-@media (min-width:992px){
-  body
-  {
+@media (min-width: 992px) {
+  body {
     background-color: black;
   }
 
-  *{
+  * {
     font-weight: 600;
   }
-  .skills{
-    transition:transform 0.5s;
+  .skills {
+    transition: transform 0.5s;
   }
-  .skills:hover{
-    border:2px solid aqua !important;
+  .skills:hover {
+    border: 2px solid aqua !important;
     transform: scale(1.4);
   }
 
-
-  .card{
-    transition:transform 0.5s;
+  .card {
+    transition: transform 0.5s;
   }
-  .card:hover{
-    border:2px solid aqua !important;
+  .card:hover {
+    border: 2px solid aqua !important;
     transform: scale(1.07);
   }
   /* NAVBAR */
-  #navbarSupportedContent{
+  #navbarSupportedContent {
     background-color: transparent !important;
   }
-  .navbar{
+  .navbar {
     min-height: 100vh;
     width: 240px;
     background-color: rgba(39, 43, 41, 0.815);
   }
 
-  .navbar .nav-link{
+  .navbar .nav-link {
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
   }
-  .navbar .nav-link:hover{
+  .navbar .nav-link:hover {
     color: darkcyan !important;
   }
 
-  .navbar .nav-link.active{
+  .navbar .nav-link.active {
     color: darkcyan !important;
   }
-.about{
-  text-align: center !important;
-}
-/* CONTENT WRAPPER */
-  #content-wrapper{
+  .about {
+    text-align: center !important;
+  }
+  /* CONTENT WRAPPER */
+  #content-wrapper {
     padding-left: 240px;
   }
   /* //CONTENT WRAPPER */
-  section{
+  section {
     min-height: 100vh;
     height: 100%;
     display: flex;
@@ -162,18 +174,18 @@ video{
     justify-content: center;
     padding-top: 80px;
     padding-bottom: 80px;
-    border-bottom: 2px solid rgba(255,255,255,0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
     background-position: center center;
     background-size: cover;
   }
-  .text-brand{
+  .text-brand {
     color: aqua !important;
   }
-  .link-custom{
+  .link-custom {
     font-weight: 700;
-    position:relative;
+    position: relative;
   }
-  .link-custom::after{
+  .link-custom::after {
     content: "";
     width: 0%;
     height: 2px;
@@ -183,18 +195,11 @@ video{
     top: 110%;
     transition: all 0.4s;
   }
-  .link-custom:hover::after{
+  .link-custom:hover::after {
     color: aqua;
     width: 100%;
   }
-  .work:hover{
+  .work:hover {
     background-color: rgb(71, 73, 90) !important;
-  }
-
-  .skills-logos img{
-    width: 100%;
-    aspect-ratio: 8/5;
-    mix-blend-mode:difference;
-    object-fit: contain !important;
   }
 }
