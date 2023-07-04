@@ -181,6 +181,9 @@ video {
   .text-brand {
     color: aqua !important;
   }
+  #text2 {
+    color: aqua !important;
+  }
   .link-custom {
     font-weight: 700;
     position: relative;
