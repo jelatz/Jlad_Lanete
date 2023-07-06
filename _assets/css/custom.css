@@ -111,6 +111,10 @@ video {
   object-fit: contain !important;
 }
 
+#text2 {
+  color: aqua !important;
+}
+
 /* SIDEBAR WIDTH = 240PX */
 /* MEDIA QUERIES */
 @media (min-width: 992px) {
@@ -181,9 +185,7 @@ video {
   .text-brand {
     color: aqua !important;
   }
-  #text2 {
-    color: aqua !important;
-  }
+
   .link-custom {
     font-weight: 700;
     position: relative;
