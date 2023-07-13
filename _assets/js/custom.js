@@ -27,8 +27,8 @@ window.addEventListener("Load", () => {
 const text2 = document.getElementById("text2");
 const texts = [
   "Web Developer",
-  "Virtual assistant",
-  "Adobe Analytics Developer",
+  "Virtual Assistant",
+  "Software Engineer Associate",
 ];
 let index = 0;
 let charIndex = 0;
