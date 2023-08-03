@@ -27,11 +27,25 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* padding-top: 80px;
-  padding-bottom: 80px; */
+  padding-top: 80px;
+  padding-bottom: 0px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
+.social {
+  gap: 4rem;
+}
+
+#socialMedia {
+  margin-top: 0rem;
+}
+.fa-brands {
+  font-size: 25px;
+}
+
+.fa-brands:hover {
+  transform: scale(1.5);
+}
 p {
   font-family: "Lato" !important;
 }
