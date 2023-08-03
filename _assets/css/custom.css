@@ -18,7 +18,7 @@
 }
 
 .animate {
-  animation: moveRightToLeft 5s linear infinite;
+  animation: moveRightToLeft 10s linear infinite;
 }
 
 section {
