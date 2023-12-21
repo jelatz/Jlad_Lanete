@@ -45,9 +45,13 @@ html,body{width: 100%; height: 100%;}
 #about p{letter-spacing: .5px;}
 
 /* SERVICES */
-#services{min-height: 55rem; max-height: 100%; background-color: var(--secondary);}
+#services{min-height: 55rem; max-height: 100%; background-color: var(--secondary);
 .accent{color: var(--accent);}
 .serv-icons{font-size: 2.5em;}
-
+.vector{width: 10rem; transform: rotate(1deg);}
+}
 /* WORK */
-#work{min-height: 55rem; max-height: 100%; background-color: var(--secondary);}
+#work{min-height: 55rem; max-height: 100%; background-color: var(--secondary);
+    .vector{width: 10rem; transform: rotate(1deg);}
+    a{font-size: .8em;}
+}
