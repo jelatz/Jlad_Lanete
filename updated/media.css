@@ -1,0 +1,11 @@
+@media only screen and (max-width: 992px){
+    .navbar-nav{box-shadow: unset;}
+    .swap-cont{padding: 10rem 0;}
+    .swap1{margin-top: 3rem;}
+
+    .social-media .nav{flex-direction: row !important; top: unset !important; bottom: 0 !important; right: unset !important; left: 50% !important; transform: translateX(-50%) !important; border-radius: unset !important; width: 100%; z-index: 50; background-color: var(--secondary); justify-content: center; gap:3rem;}
+}
+
+@media only screen and (max-width: 768px){
+    .main-bottom{max-width: 90% !important;}
+}
