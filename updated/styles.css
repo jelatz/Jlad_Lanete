@@ -9,6 +9,7 @@
 
 *{font-family: 'Poppins', sans-serif; box-sizing: border-box; color: #fff;}
 /* p{font-size: 1em;} */
+.shadow-box{box-shadow: 0px 0px 20px 0 var(--accent);}
 
 html,body{width: 100%; height: 100%;}
 
@@ -18,7 +19,7 @@ html,body{width: 100%; height: 100%;}
 .active{color: var(--accent) !important;}
 
 /* HOME */
-#home{width: 100%; background: var(--primary); position: relative;min-height: 40rem;}
+#home{width: 100%; background: var(--primary); position: relative;padding: 8rem 0;}
 #home .row{height: 100%; min-height: 100vh;}
 .name {letter-spacing: 3px; color: var(--accent);}
 .label::after{content: ""; width: 6rem; height: 3px; background-color: var(--accent); position: absolute; bottom: -30px; left: 0;}
@@ -44,6 +45,13 @@ html,body{width: 100%; height: 100%;}
 #about p{letter-spacing: .5px;}
 
 /* SERVICES */
-#services{height: 55rem; max-height: 100%; background-color: var(--secondary);}
+#services{min-height: 55rem;padding: 8rem 0; max-height: 100%; background-color: var(--secondary);
 .accent{color: var(--accent);}
-
+.serv-icons{font-size: 2.5em;}
+.vector{width: 10rem; transform: rotate(1deg);}
+}
+/* WORK */
+#work{min-height: 55rem; max-height: 100%; background-color: var(--secondary);
+    .vector{width: 10rem; transform: rotate(1deg);}
+    a{font-size: .8em;}
+}
