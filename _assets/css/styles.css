@@ -4,6 +4,8 @@
 
 @import url('../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css');
 
+@import url('../../node_modules/aos/src/sass/aos.scss')
+
 /* GLOBALS */
 :root{
     --primary: #222831;
