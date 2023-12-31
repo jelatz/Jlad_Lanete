@@ -1,4 +1,10 @@
 @media only screen and (max-width: 992px){
-.offcanvas-header{background: var(--primary);}
-.offcanvas-body{background: var(--secondary);}
+
+/* NAVGATION */
+    .offcanvas-header{background: var(--primary);}
+    .offcanvas-body{background: var(--secondary);}
+
+/* WORK SECTION */
+    .swap{flex-direction: column-reverse;}
+
 }
