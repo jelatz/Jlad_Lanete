@@ -51,3 +51,11 @@ nav{background: var(--primary);}
     & i{color: var(--tertiary); font-size: 1.2em;}
 }
 
+/* SKILLS */
+#skills{ padding: 2rem 0; background: var(--primary); 
+    & .skill{ display: flex; margin: auto auto; align-items: center;
+        & img{width: 20vw;padding: 3rem 1rem; object-fit: contain;}
+    }
+    
+}
+
