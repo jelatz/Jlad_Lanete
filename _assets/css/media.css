@@ -5,6 +5,6 @@
     .offcanvas-body{background: var(--secondary);}
 
 /* WORK SECTION */
+    #work{padding: 5rem 0 2rem;}
     .swap{flex-direction: column-reverse;}
-
 }
