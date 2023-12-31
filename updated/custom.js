@@ -1,19 +1,10 @@
-// FUNCTION FOR HAMBURGER MENU
-function myFunction() {
-  var x = document.getElementById("navContent");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
-// TYPEWRITER EFFECT FOR THE POSITIONS
-const text2 = document.getElementById("text");
+// TYPEWRITER EFFECT
+const text2 = document.getElementById("positions");
 const texts = [
-  "Front End Web Developer",
+  " ",
+  "Web Developer",
   "Virtual Assistant",
-  "Software Engineer",
+  "Software Engineer Associate",
 ];
 let index = 0;
 let charIndex = 0;
@@ -41,16 +32,3 @@ function typeEffect() {
 }
 
 typeEffect();
-
-// SWAP PROFILE AND CONTENT ON 992PX BELOW
-var swapped = false;
-
-function swapElements() {
-  if ($(window).width() <= 992 && !swapped) {
-    $(".swap2").prependTo(".swap-cont");
-    swapped = true;
-  } else if ($(window).width() > 992 && swapped) {
-    $(".swap2").appendTo(".swap-cont");
-    swapped = false;
-  }
-}

@@ -2,219 +2,99 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../_assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="../_assets/css/aos.css" />
-    <link rel="stylesheet" href="../_assets/css/line-awesome.min.css" />
-    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
-    <link rel="stylesheet" href="../updated/styles.css"
-    <link rel="stylesheet" href="../updated/media.css" />
-    <title>Jlad Lanete</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../_assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="../_assets/css/aos.css" />
+  <link rel="stylesheet" href="../_assets/css/line-awesome.min.css" />
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="../updated/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="media.css">
+  <title>Jlad Lanete</title>
 </head>
+<!-- NAVIGATION -->
+<nav class="navbar navbar-expand-lg  fixed-top">
+  <div class="container-fluid">
+    <a href="#home" class="navbar-brand "><img src="../_assets/images/logo.png" alt="logo" class="logo" /></a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="bi bi-list"></i></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarContent" aria-labelledby="navbarContentLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="navbarContentLabel"><img src="../_assets/images/logo.png" alt="logo"
+            class="logo"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+          aria-label="collapse "></button>
+      </div>
+      <div class="offcanvas-body justify-content-end ">
+        <ul class="navbar-nav justify-content-end gap-5 me-5">
+          <li class="nav-item">
+            <a href="#home" class="nav-link text-white active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#work" class="nav-link text-white">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link text-white">SKills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link text-white">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="d-grid align-content-end">
+  <div class="container-lg z-3">
+    <div class="row flex-column align-items-center pb-5">
+      <div class="col-lg-10 text-center">
+        <h1 class="name my-3">Jlad Lanete</h1>
+        <h2 id="positions" class=""></h2>
+        <p class="text-white fs-5 my-5">From Cebu City Philippines, a freelancer who is passionate about leveraging my
+          skills to
+          create solutions and contribute to the digital world. Let’s make your ideas to reality.</p>
+        <div class="social-media d-flex justify-content-center gap-4 my-4">
+          <a href="https://www.facebook.com/latz.lanete/" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/lanetejlad/" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/jladlanete/" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/jelatz" target="_blank"><i class="bi bi-github"></i></a>
+        </div>
+        <a href="../_assets/docs/Jlad-Lanete-CV.pdf" class="cv rounded-5 px-5 py-2 text-white">Download
+          my CV</a>
+      </div>
+    </div>
+  </div>
+  <figure class="z-0 "><img src="../_assets/images/profile.png" alt="profile"
+      class="img-fluid position-absolute bottom-0 start-50 translate-middle-x img-fluid opacity-25"></figure>
+</section>
+
+
+<section id="work" class="h-100 bg-black ">
+  <h1>hey</h1>
+</section>
 
 <body>
-    <header class="navbar navbar-expand-lg bg-transparent fixed-top w-100">
-        <div class="container-fluid">
-            <a href="index.html" class="navbar-brand d-lg-none text-white">Jlad Lanete</a>
-            <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="offcanvas"
-                data-bs-target="#navbarContent" arial-controls="navbarContent" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="navbarContent"
-                aria-labelledby="navbarContentLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="navbarContentLabel">Jlad Lanete</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-lg-center gap-lg-5 mx-auto my-lg-3 rounded-5 px-lg-5 w-auto">
-                        <li class="nav-item">
-                            <a href="#home" class="nav-link text-white active">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link text-white">ABOUT ME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#services" class="nav-link text-white">SERVICES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#portfolio" class="nav-link text-white">PORTFOLIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link text-white">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
+  <!-- SCRIPTS -->
+  <script src="/_assets/js/bootstrap.bundle.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="/updated/custom.js"></script>
+  <script src="/_assets/js/aos.js"></script>
+  <!-- <script src="/_assets/js/main.js"></script> -->
 
-    <!-- HOME -->
-    <section id="home">
-        <div class="container">
-            <div class="row justify-content-between align-items-center swap-cont">
-                <div class="col-lg-5 pt-lg-4 swap1">
-                    <p class="fs-5">Hello, I'm</p>
-                    <h1 class="name fs-1 fw-bold position-relative">Jlad Lanete</h1>
-                    <h2 class="label position-relative mb-5 fs-3">
-                        Web Designer & Developer
-                    </h2>
-                    <p class="fs-5">
-                        Web Designer and developer from the Philippines.
-                        <span>I create custom website to help businesses do </span><span>better online.</span>
-                    </p>
-                    <a href="#contact" class="text-black hire-me-btn px-4 py-1 rounded-5 fw-normal fs-5">Hire Me</a>
-                    <a href="tel:09760275569"
-                        class="contact-num position-relative nav-link d-inline-block ms-2 fs-5">09760275569</a>
-                </div>
-                <div class="col-lg-5 text-center swap2">
-                    <figure class="pt-3">
-                        <img src="../_assets/images/profile.png" alt="Jlad Lanete"
-                            class="profile rounded-circle border border-black object-fit-cover" width="300px"
-                            height="300px" />
-                    </figure>
-                </div>
-            </div>
-        </div>
+  <!-- <script>
+    $(document).ready(function () {
+      swapElements();
+    });
 
-        <div class="social-media">
-            <ul class="nav flex-column position-fixed end-0 top-50 rounded-start-4 p-1 translate-middle-y">
-                <li class="nav-link px-lg-2 py-lg-3 p-2">
-                    <a href="www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
-                </li>
-                <li class="nav-link px-lg-2 py-lg-3 p-2">
-                    <a href="www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
-                </li>
-                <li class="nav-link px-lg-2 py-lg-3 p-2">
-                    <a href="www.linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
-                </li>
-                <li class="nav-link px-lg-2 py-lg-3 p-2">
-                    <a href="www.github.com" target="_blank"><i class="bi bi-github"></i></a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="main-bottom position-absolute rounded-5">
-            <div class="container-lg">
-                <div class="row justify-content-around align-items-center flex-nowrap px-5 py-4 text-center">
-                    <div class="col-auto">
-                        <p class="text-nowrap m-0">
-                            1 Year+ Job <span class="text-white d-block">Experience</span>
-                        </p>
-                    </div>
-                    <div class="col-auto">
-                        <p class="text-nowrap m-0">
-                            5 Projects <span class="text-white d-block">Completed</span>
-                        </p>
-                    </div>
-                    <div class="col-auto">
-                        <p class="text-nowrap m-0">
-                            Support <span class="text-white d-block">Online 24/7</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="d-grid align-content-center pb-5">
-        <div class="container">
-            <div class="row mt-5 pt-5">
-                <div class="col-auto">
-                    <h1 class="fw-bold">About Me</h1>
-                    <p>
-                        Hi, I am Jlad Lanete, Web designer and developer from Cebu,
-                        Philippines. I have helped more than a hundreds of clients in
-                        getting their Business Online Presence. As a wordpress Developer,
-                        Wordpress Expert Designer. I’ve been passionate about helping
-                        small, medium, or large businesses around the Globe by developing
-                        a highly SEO-optimized & User-Friendly responsive Wordpress
-                        Website for their Business.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="container">
-            <div class="row justify-content-center align-items-center flex-column">
-                <h1 class="fs-6 text-center my-5">
-                    Specialized In
-                    <span class="accent fs-2 fw-bold d-block my-1">SERVICES</span>
-                    <img src="../_assets/images/vector.png" alt="vector" class="vector">
-                </h1>
-            </div>
-            <div class="row justify-content-center align-items-center gap-5 px-3 px-lg-0">
-                <div class="col-lg-3 text-center shadow-box d-grid align-items-center p-5">
-                    <i class="bi bi-display serv-icons"></i>
-                    <p class="accent">WEB DESIGN & DEVELOPMENT</p>
-                    <p>Conversion-Based Approach</p>
-                </div>
-                <div class="col-lg-3 text-center shadow-box d-grid align-items-center p-5">
-                    <i class="bi bi-gear serv-icons"></i>
-                    <p class="accent">WORDPRESS FIXES & TWEAKS</p>
-                    <p>From Repairs to Performance</p>
-                </div>
-                <div class="col-lg-3 text-center shadow-box d-grid align-items-center p-5">
-                    <i class="bi bi-tools serv-icons"></i>
-                    <p class="accent">SECURED HOSTING & MAINTENANCE</p>
-                    <p>From repairs to Performance</p>
-                </div>
-                <div class="col-lg-3 text-center shadow-box d-grid align-items-center p-5">
-                    <i class="bi bi-check-circle serv-icons"></i>
-                    <p class="accent">WEB ACCESSIBILITY</p>
-                    <p>Create an Accessible Website</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="work">
-        <div class="container-lg">
-            <div class="row justify-content-center align-items-center">
-                <h1 class="fs-6 text-center">
-                    Portfolio
-                    <span class="accent fs-2 fw-bold d-block my-1">MY WORK</span>
-                    <img src="../_assets/images/vector.png" alt="vector" class="vector">
-                </h1>
-            </div>
-            <div class="row justify-content-center align-items-center px-3 px-lg-0">
-                <div class="col-lg-3 text-center d-grid align-content-center p-5">
-                    <figure>
-                        <img src="../_assets/images/projects/saekyung-auxilium/saekyung.png" alt="saekyung" class="w-75 shadow-box">
-                    </figure>
-                    <p class="accent fs-4">Saekyung Auxilium</p>
-                    <a href="https://github.com/jelatz/Saekyung-Auxilium" target="_blank" class="text-white text-decoration-none">https://github.com/jelatz/Saekyung-Auxilium</a>
-                </div>
-                <div class="col-lg-3 text-center d-grid align-content-center p-5">
-                    <figure>
-                        <img src="" alt="">
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SCRIPTS -->
-    <script src="/_assets/js/bootstrap.bundle.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="/updated/custom.js"></script>
-    <script src="/_assets/js/aos.js"></script>
-    <script src="/_assets/js/main.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            swapElements();
-        });
-
-        // Use .on() to handle the resize event
-        $(window).on("resize", function () {
-            swapElements();
-        });
-    </script>
+    // Use .on() to handle the resize event
+    $(window).on("resize", function () {
+      swapElements();
+    });
+  </script> -->
 </body>
 
 </html>
