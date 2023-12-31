@@ -38,10 +38,14 @@ nav{background: var(--primary);}
     & figure{z-index: -1;}
     & img{height: 85vh;}
     & h1{color: var(--tertiary); letter-spacing: .2em;}
-    & .name{z-index: 999999;}
     & #positions{color: #fff; height: 1.5rem;}
     & .cv{background: var(--secondary); margin-top: 5rem !important;}
     & .social-media *{color: var(--tertiary); font-size: 1.2em;}
 }   
 
+/* WORK */
+#work{padding: 2rem 0; background: var(--secondary);
+    & a{vertical-align: middle; height: 2.5rem; width: fit-content !important;}
+    & i{color: var(--tertiary); font-size: 1.2em;}
+}
 
