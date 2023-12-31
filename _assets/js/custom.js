@@ -1,39 +1,37 @@
-$(document).ready(function () {
-  // TYPEWRITER EFFECT
-  const text2 = document.getElementById("positions");
-  const texts = [
-    " ",
-    "Web Developer",
-    "Virtual Assistant",
-    "Software Engineer Associate",
-  ];
-  let index = 0;
-  let charIndex = 0;
-  let isDeleting = false;
+// TYPEWRITER EFFECT
+const text2 = document.getElementById("positions");
+const texts = [
+  " ",
+  "Web Developer",
+  "Virtual Assistant",
+  "Software Engineer Associate",
+];
+let index = 0;
+let charIndex = 0;
+let isDeleting = false;
 
-  function typeEffect() {
-    const text = texts[index];
-    if (isDeleting) {
-      text2.textContent = text.substring(0, charIndex - 1);
-      charIndex--;
-      if (charIndex === 0) {
-        isDeleting = false;
-        index = (index + 1) % texts.length;
-      }
-    } else {
-      text2.textContent = text.substring(0, charIndex + 1);
-      charIndex++;
-      if (charIndex === text.length) {
-        isDeleting = true;
-        setTimeout(typeEffect, 1000);
-        return;
-      }
+function typeEffect() {
+  const text = texts[index];
+  if (isDeleting) {
+    text2.textContent = text.substring(0, charIndex - 1);
+    charIndex--;
+    if (charIndex === 0) {
+      isDeleting = false;
+      index = (index + 1) % texts.length;
     }
-    setTimeout(typeEffect, 100);
+  } else {
+    text2.textContent = text.substring(0, charIndex + 1);
+    charIndex++;
+    if (charIndex === text.length) {
+      isDeleting = true;
+      setTimeout(typeEffect, 1000);
+      return;
+    }
   }
+  setTimeout(typeEffect, 100);
+}
 
-  typeEffect();
+typeEffect();
 
-  // AOS
-  AOS.init();
-});
+// AOS
+AOS.init();

@@ -4,7 +4,7 @@
 
 @import url('../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css');
 
-@import url('../../node_modules/aos/src/sass/aos.scss')
+@import url('../../node_modules/aos/src/js/aos.js');
 
 /* GLOBALS */
 :root{
