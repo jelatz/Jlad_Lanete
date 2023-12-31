@@ -46,7 +46,7 @@ nav{background: var(--primary);}
 
 /* WORK */
 #work{padding: 2rem 0; background: var(--secondary);
-    & a{vertical-align: middle; height: 2.5rem; width: fit-content !important;}
+    & a{vertical-align: middle; height: 2.5rem; width: fit-content !important; margin: 1rem 0}
     & i{color: var(--tertiary); font-size: 1.2em;}
 }
 
