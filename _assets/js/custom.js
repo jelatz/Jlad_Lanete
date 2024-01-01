@@ -5,7 +5,7 @@ $(document).ready(function () {
     " ",
     "Web Developer",
     "Virtual Assistant",
-    "Software Engineer Associate",
+    "Software Engineer",
   ];
   let index = 0;
   let charIndex = 0;

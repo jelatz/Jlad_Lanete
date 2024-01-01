@@ -8,3 +8,10 @@
     #work{padding: 5rem 0 2rem;}
     .swap{flex-direction: column-reverse;}
 }
+
+
+@media only screen and (max-width: 557px){
+    #home{
+        figure{display: none;}
+    }
+}
