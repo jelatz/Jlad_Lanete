@@ -40,7 +40,6 @@ $(document).ready(function () {
   // SLICK
 
   $(".skill").slick({
-    slidesToShow: 5,
     autoplay: true,
     autoplaySpeed: 0,
     speed: 3500,
@@ -50,5 +49,6 @@ $(document).ready(function () {
     useCSS: false,
     variableWidth: true,
     infinite: true,
+    pauseOnHover: false,
   });
 });
