@@ -12,6 +12,8 @@
 
 @media only screen and (max-width: 557px){
     #home{
-        figure{display: none;}
+        & .row{flex-direction: column-reverse !important;}
+        & figure{text-align: center !important;    padding: 8rem 0 0;}
+        & img{position: unset !important; margin: 0 auto; height: 100%;width: 100%; max-width: 12rem; transform: unset !important; opacity: unset !important;}
     }
 }
