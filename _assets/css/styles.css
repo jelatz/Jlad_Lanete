@@ -59,3 +59,20 @@ nav{background: var(--primary);}
     
 }
 
+/* CONTACT ME */
+
+#contact{min-height: 100vh; background: var(--secondary);color: #fff;
+        & p{background: var(--primary); width: fit-content;}
+        & h3{
+            & span{color: var(--tertiary);}
+        }
+        & small{
+            & span{color: var(--tertiary);}
+        }
+
+        & form{
+            & input{border: 1px solid var(--tertiary);box-shadow: 0px 0px 10px 0 var(--tertiary);}
+            & .submit{border: unset !important; box-shadow: unset !important; background: var(--primary);}
+        }
+}
+
