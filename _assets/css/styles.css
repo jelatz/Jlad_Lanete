@@ -61,8 +61,8 @@ nav{background: var(--primary);}
 
 /* CONTACT ME */
 
-#contact{min-height: 100vh; background: var(--secondary);color: #fff;
-        & p{background: var(--primary); width: fit-content;}
+#contact{min-height: 100vh; background: var(--primary);color: #fff;
+        & p{}
         & h3{
             & span{color: var(--tertiary);}
         }
