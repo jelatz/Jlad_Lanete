@@ -51,4 +51,14 @@ $(document).ready(function () {
     infinite: true,
     pauseOnHover: false,
   });
+  // CLOSES THE CANVAS WHEN EACH LINK IS CLICKED
+  var offcanvas = new bootstrap.Offcanvas(
+    document.getElementById("navbarContent")
+  );
+
+  // Add click event listener to each navigation link
+  $(".navbar-nav a").on("click", function () {
+    // Close the offcanvas when a link is clicked
+    offcanvas.hide();
+  });
 });

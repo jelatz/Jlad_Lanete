@@ -38,11 +38,12 @@ nav{background: var(--primary);}
 #home{width: 100%; min-height: 100vh;position: relative;
     background-color: var(--primary);
     & figure{z-index: -1;}
-    & img{height: 85vh;}
+    & img{height: 85vh; z-index: -1 !important;}
     & h1{color: var(--tertiary); letter-spacing: .2em;}
     & #positions{color: #fff; height: 1.5rem;}
     & .cv{background: var(--secondary); margin-top: 5rem !important;}
-    & .social-media *{color: var(--tertiary); font-size: 1.2em;}
+    & .social-media *{color: var(--tertiary); font-size: 1.2em; z-index: 5;}
+    .social-media *:hover{transform: scale(1.2);}
 }   
 
 /* WORK */
@@ -71,8 +72,13 @@ nav{background: var(--primary);}
         }
 
         & form{
-            & input{border: 1px solid var(--tertiary);box-shadow: 0px 0px 10px 0 var(--tertiary);}
-            & .submit{border: unset !important; box-shadow: unset !important; background: var(--primary);}
+            & input{border: 1px solid var(--tertiary);box-shadow: 0px 0px 10px 0 var(--tertiary); color: #fff;}
+            & textarea{border: 1px solid var(--tertiary); box-shadow: 0 0 10px 0 var(--tertiary); color: #fff;}
+            & .submit{border: unset !important; box-shadow: unset !important; background: var(--secondary);}
         }
 }
 
+/* FOOTER */
+footer{background: var(--primary);
+    & .brand-name{color: var(--tertiary) !important;}
+}
