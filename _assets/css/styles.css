@@ -52,7 +52,7 @@ nav{background: var(--primary);}
 }
 
 /* SKILLS */
-#skills{ padding: 2rem 0; background: var(--primary); 
+#skills{background: var(--primary); 
     & .skill{ display: flex; margin: auto auto; align-items: center;
         & img{width: 18rem;padding: 3rem 5rem; object-fit: contain; aspect-ratio: 3/4;}
     }
@@ -61,7 +61,7 @@ nav{background: var(--primary);}
 
 /* CONTACT ME */
 
-#contact{min-height: 100vh; background: var(--primary);color: #fff;
+#contact{min-height: 30rem; background: var(--primary);color: #fff;
         & p{}
         & h3{
             & span{color: var(--tertiary);}
