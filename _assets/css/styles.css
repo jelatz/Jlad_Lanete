@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=David+Libre:wght@400;500;700&family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
 
 
+/* ~~~~~Popup Modal~~~~~ */
+/*Modal box*/
+#Modal{display:block; height: 100%; position: fixed; width: 100%; background-color: rgba(0,0,0,0.4); z-index: 9999999;}
+#Mod_container{width: 70rem; margin: 0 auto; text-align: center; background: #fff; height: auto; max-width: 100%; border: 3px solid #575757; position: fixed; transform: translate(-50%,-50%); top: 50%; left: 50%;}
+.Mod_text{font-size:19px; padding:32px 18px;} 
+.Mod_text p span{display:block; font-weight: bold; font-size: 22px; height: auto;}
+.close{position: absolute; right: 6px; top: 6px; font-weight: bold; font-size: 16px; color: #fff; font-family: Sans-serif; width: 25px; text-align: center; border-radius: 12px; height: 25px; line-height: 22px; cursor: pointer; background: #42b9f7;}
+.Mod_text p{animation: blink 1s infinite; padding: 0; margin: 0;}
+@keyframes blink{
+    0%, 49%, 100%{
+        opacity: 0;
+    }
+    50%, 99%{
+        opacity: 1;
+    }
+}
+
 /* GLOBALS */
 :root{
     --primary: #222831;

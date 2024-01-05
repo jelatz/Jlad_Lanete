@@ -61,4 +61,13 @@ $(document).ready(function () {
     // Close the offcanvas when a link is clicked
     offcanvas.hide();
   });
+
+  // MODAL FOR TEMPORARY CONSTRUCTION
+  $(window).on("load", function () {
+    $("#Modal").css("display", "block");
+
+    $(".close").click(function () {
+      $("#Modal").css("display", "none");
+    });
+  });
 });
