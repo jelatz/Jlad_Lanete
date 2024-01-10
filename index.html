@@ -21,9 +21,6 @@
 <div id="Modal">
   <div id="Mod_container" class="rounded-4">
     <div id="modboxcolor">
-      <!-- <div class="close">
-        <p>x</p>
-      </div> -->
       <div class="Mod_text">
         <p class="text-danger fw-bolder display-1 ">Work still in progress</p>
       </div>
@@ -31,210 +28,46 @@
   </div>
 </div>
 
-
 <!-- NAVIGATION -->
-<nav class="navbar navbar-expand-lg  fixed-top">
-  <div class="container-fluid">
-    <a href="#home" class="navbar-brand "><img src="../_assets/images/logo.png" alt="logo" class="logo" /></a>
-    <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarContent"
-      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span><i class="bi bi-list"></i></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarContent" aria-labelledby="navbarContentLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="navbarContentLabel"><img src="../_assets/images/logo.png" alt="logo"
-            class="logo"></h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-          aria-label="collapse "></button>
-      </div>
-      <div class="offcanvas-body justify-content-center ">
-        <ul class="navbar-nav justify-content-end gap-5 me-5">
-          <li class="nav-item">
-            <a href="#home" class="nav-link text-white active" aria-current="page">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#work" class="nav-link text-white">My Work</a>
-          </li>
-          <li class="nav-item">
-            <a href="#skills" class="nav-link text-white">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link text-white">Contact Me</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+<nav class="navbar fixed-top bg-transparent ">
+  <div class="container-fluid mx-lg-5 justify-content-center gap-3 justify-content-md-between">
+    <a href="#home" class="navbar-brand"><img src="_assets/images/logo.png" alt="logo" class="logo"></a>
+    <ul class="nav w-100 justify-content-center gap-3 gap-lg-5">
+      <li class="nav-item">
+        <a href="www.facebook.com" target="_blank" class="nav-link"><i class="bi bi-facebook"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href="www.instagram.com" target="_blank" class="nav-link"><i class="bi bi-instagram"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href="www.linkedin.com" target="_blank" class="nav-link"><i class="bi bi-linkedin"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href="www.github.com" target="_blank" class="nav-link"><i class="bi bi-github"></i></a>
+      </li>
+    </ul>
   </div>
 </nav>
 
 <!-- HOME -->
-<section id="home" class="d-grid align-content-center">
-  <div class="container-fluid z-3">
-    <div class="row flex-column align-items-center">
-      <div class="col-lg-10 text-center">
-        <h1 class="name my-3 fw-bolder">Jlad Lanete</h1>
-        <h3 id="positions" class=""></h3>
-        <!-- <div class="social-media d-flex justify-content-center gap-4 my-4">
-          <a href="https://www.facebook.com/latz.lanete/" target="_blank"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/lanetejlad/" target="_blank"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/jladlanete/" target="_blank"><i class="bi bi-linkedin"></i></a>
-          <a href="https://github.com/jelatz" target="_blank"><i class="bi bi-github"></i></a>
-        </div>
-        <a href="_assets/docs/Jlad-Lanete-CV.pdf" class="cv rounded-5 px-5 py-2 text-white z-3" target="_blank">Download
-          my CV</a> -->
-      </div>
-      <figure class="z-n1 "><img src="../_assets/images/profile.png" alt="profile"
-          class="img-fluid position-absolute bottom-0 start-50 translate-middle-x img-fluid opacity-25 z-0"></figure>
-    </div>
-  </div>
-</section>
-
-
-<section id="work" class="overflow-hidden">
-  <div class="container">
-    <!-- SAEKYUNG AUXILIUM -->
-    <div class="row justify-content-around my-5  px-3 px-lg-0" data-aos="fade-left" data-aos-duration="2000">
-      <div class="col-lg-5 justify-content-between ">
-        <figure class="mb-1">
-          <img src="../_assets/images/projects/saekyung-auxilium/index.png" alt="Saekyung Auxilium" class="img-fluid">
-        </figure>
-        <a href="http://https://github.com/jelatz/Saekyung-Auxilium" target="_blank" rel="noopener noreferrer"
-          class="text-white fs-5 d-block w-100 mx-auto"><i class="bi bi-github mx-3"></i>Saekyung Auxilium</a>
-      </div>
-      <div class="col-lg-5 d-grid align-content-center ">
-        <p class="text-white">This project is an information management system that focuses on maintenance request to
-          address the residence issues with communication due to a signal jammer installed in the area. This is my
-          capstone project on my 4th year at USPF</p>
-      </div>
-    </div>
-    <!-- RFID PROCESSING SYSTEM -->
-    <div class="row my-5 justify-content-around swap  px-3 px-lg-0" data-aos="fade-right" data-aos-duration="2000"
-      data-aos-delay="300">
-      <div class="col-lg-5 d-grid align-content-center ">
-        <p class="text-white">
-          This web app we made was for the hackathon that we attended in school and helps in the ongoing RFID
-          registration of students and employees.
-        </p>
-      </div>
-      <div class="col-lg-5">
-        <figure class="mb-1">
-          <img src="../_assets/images/projects/rfid/rfid.png" alt="RFID" class="img-fluid">
-        </figure>
-        <a href="https://github.com/jelatz/RFID-PROCESSING-PLATFORM" target="_blank"
-          class="text-white fs-5 d-block w-100 mx-auto"><i class="bi bi-github mx-3"></i>RFID-PROCESSING-PLATFORM</a>
-      </div>
-    </div>
-    <!-- HEALTEETH -->
-    <div class="row my-5 justify-content-around px-3 px-lg-0" data-aos="fade-left" data-aos-duration="2000"
-      data-aos-delay="600">
-      <div class="col-lg-5">
-        <figure class="mb-1">
-          <img src="../_assets/images/projects/healteeth/healteeth.png" alt="Healteeth" class="img-fluid">
-        </figure>
-        <a href="https://github.com/jelatz/healteeth" target="_blank" class="text-white fs-5 d-block w-100 mx-auto"><i
-            class="bi bi-github mx-3"></i>Healteeth</a>
-      </div>
-      <div class="col-lg-5 d-grid align-content-center">
-        <p class="text-white">
-          A personal project that helps dental clinics manage patients appointment bookings. This project was made for
-          me to be more familiar with PHP.
-        </p>
-      </div>
-    </div>
-    <!-- CCRMS -->
-    <div class="row my-5 justify-content-around swap px-3 px-lg-0" data-aos="fade-right" data-aos-duration="2000"
-      data-aos-delay="900">
-      <div class="col-lg-5 d-grid align-content-center">
-        <p class="text-white">
-          Our final project in one of our subject. THis was done using CI 3. The objective of the project was to help
-          the teachers manage students grades and attendance using technology.
-        </p>
-      </div>
-      <div class="col-lg-5">
-        <figure class="mb-1">
-          <img src="../_assets/images/projects/ccrms/ccrms.png" alt="CCRMS" class="img-fluid">
-        </figure>
-        <a href="https://github.com/jelatz/CCRMS" class="text-white fs-5 d-block w-100 mx-auto" target="_blank"><i
-            class="bi bi-github mx-3"></i>CCRMS</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="skills">
+<section id="home" class="bg-primary d-grid align-content-center h-100 pt-5">
   <div class="container-fluid">
-    <div class="skill d-grid align-content-center ">
-      <img src="_assets/images/github.png" alt="github">
-      <img src="_assets/images/html.png" alt="html">
-      <img src="_assets/images/css.png" alt="css">
-      <img src="_assets/images/js.png" alt="javascript">
-      <img src="_assets/images/php.png" alt="php">
-      <img src="_assets/images/mysql.png" alt="mysql">
-      <img src="_assets/images/wordpress-logo.png" alt="wordpress">
-      <img src="_assets/images/bootstrap-logo.png" alt="bootstrap">
-    </div>
-
-  </div>
-</section>
-
-<section id="contact" class="pt-5 d-lg-grid align-content-lg-center ">
-  <div class="container">
-    <div class="row justify-content-center align-items-center gap-5 px-2">
-      <div class="col-lg-5">
-        <p class="fs-5">Contact Me</p>
-        <h3 class="text-white fw-bolder lh-base ">Got a problem to <span class="d-block">SOLVE?</span></h3>
-        <small>Let me know your ideas to build your dream <span class="fs-6">Website</span></small>
-      </div>
-      <div class="col-lg-5">
-        <form action="" https://formsubmit.co/lanetejlad@gmail.com"" method="POST">
-          <div class="mb-3">
-            <label for="name" class="form-label">Name:</label>
-            <input type="text" class="form-control rounded-4 bg-transparent border-1 " required>
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email Address:</label>
-            <input type="text" class="form-control rounded-4 bg-transparent border-1 " required>
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message:</label>
-            <textarea name="message" id="message" rows="6"
-              class="form-control rounded-4 bg-transparent border-1"></textarea>
-            <!-- <input type="text" class="form-control rounded-pill bg-transparent border-1 " required> -->
-          </div>
-          <input type="submit" value="Send" class="submit rounded-pill text-white px-5 py-1 my-2" name="submit">
-        </form>
+    <div class="row justify-content-center ">
+      <div class="col-lg-12 h-100">
+        <h1 class="display-1 text-tertiary fw-bolder text-center my-5 my-lg-0">Jlad Lanete</h1>
+        <h4 class="display-1 text-accent fw-normal text-center mt-5 my-lg-0" id="positions"></h4>
+        <a href="_assets/docs/Jlad-Lanete-CV.pdf" download target="_blank"
+          class="nav-link d-block text-accent mx-auto rounded-5 bg-secondary py-3 px-5 text-center fs-5 my-lg-5 my-5">Download
+          My CV</a>
+        <svg class="arrows position-absolute start-50 translate-middle-x bottom-0 mb-3">
+          <path class="a1" d="M0 0 L30 32 L60 0"></path>
+          <path class="a2" d="M0 20 L30 52 L60 20"></path>
+          <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
       </div>
     </div>
   </div>
 </section>
-
-<footer class="pt-5 text-center px-5">
-  <div class="container-fluid">
-    <div
-      class="row justify-content-center justify-content-lg-between  px-3 gap-5 gap-lg-0 flex-column-reverse flex-md-row">
-      <div class="col-lg-auto">
-        <!-- <a href="#home" class="brand-name fs-4">Jlad Lanete</a> -->
-        <p class="text-white">&copy Copyright 2024</p>
-      </div>
-      <div class="col-lg-auto">
-        <ul class="navbar-nav flex-column flex-md-row justify-content-evenly gap-5">
-          <li class="nav-item">
-            <a href="#home" class="nav-link text-white active" aria-current="page">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#work" class="nav-link text-white">My Work</a>
-          </li>
-          <li class="nav-item">
-            <a href="#skills" class="nav-link text-white">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link text-white">Contact Me</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
 
 <body>
   <!-- SCRIPTS -->
@@ -245,24 +78,10 @@
   <script src="/_assets/js/aos.js"></script>
 
   <!-- Other Scripts -->
-  <!-- <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> -->
   <script src="/_assets/js/bootstrap.bundle.js"></script>
   <script src="/_assets/js/custom.js"></script>
   <!-- CAROUSEL Javascript -->
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-  <!-- <script src="/_assets/js/main.js"></script> -->
-
-  <!-- <script>
-    $(document).ready(function () {
-      swapElements();
-    });
-
-    // Use .on() to handle the resize event
-    $(window).on("resize", function () {
-      swapElements();
-    });
-  </script> -->
   <script>
     window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
   </script>

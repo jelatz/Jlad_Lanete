@@ -1,33 +1,9 @@
-@import url(styles.css);
-@media only screen and (max-width: 992px){
-
-/* NAVGATION */
-    .offcanvas-header{background: var(--primary);}
-    .offcanvas-body{background: var(--secondary);}
-
-/* WORK SECTION */
-
-
-
-      #work{padding: 5rem 0 2rem;
-        & .row{border: 3px solid var(--tertiary); margin: 0 2rem; padding: 1.5rem; border-radius: 15px; background: var(--primary); box-shadow: 0 0 10px 0 var(--tertiary);
-        & .swap{flex-direction: column-reverse;}
-        }
+@media only screen and (min-width: 776px){
+    nav{
+        & .nav{width: unset !important;}
     }
 }
 
-
-@media only screen and (max-width: 557px){
-    #home{
-        & .row{flex-direction: column-reverse !important;}
-        & figure{text-align: center !important;    padding: 8rem 0 0;}
-        & img{position: unset !important; margin: 0 auto; height: 100%;width: 100%; max-width: 12rem; transform: unset !important; opacity: unset !important;}
-    }
-  
-}
-
-@media only screen and (min-width: 557px){
-    #home{
-        & .row{margin: 20rem 0 0;}
-    }
+@media only screen and (min-width: 992px){
+ 
 }

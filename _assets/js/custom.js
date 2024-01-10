@@ -36,39 +36,4 @@ $(document).ready(function () {
 
   // AOS INITIALIZATION
   AOS.init();
-
-  // SLICK
-
-  $(".skill").slick({
-    autoplay: true,
-    autoplaySpeed: 0,
-    speed: 3500,
-    arrows: false,
-    dots: false,
-    waitForAnimate: true,
-    useCSS: false,
-    variableWidth: true,
-    infinite: true,
-    pauseOnHover: false,
-  });
-
-  // CLOSES THE CANVAS WHEN EACH LINK IS CLICKED
-  var offcanvas = new bootstrap.Offcanvas(
-    document.getElementById("navbarContent")
-  );
-
-  // Add click event listener to each navigation link
-  $(".navbar-nav a").on("click", function () {
-    // Close the offcanvas when a link is clicked
-    offcanvas.hide();
-  });
-
-  // MODAL FOR TEMPORARY CONSTRUCTION
-  $(window).on("load", function () {
-    $("#Modal").css("display", "block");
-
-    $(".close").click(function () {
-      $("#Modal").css("display", "none");
-    });
-  });
 });
