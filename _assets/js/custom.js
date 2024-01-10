@@ -51,6 +51,7 @@ $(document).ready(function () {
     infinite: true,
     pauseOnHover: false,
   });
+
   // CLOSES THE CANVAS WHEN EACH LINK IS CLICKED
   var offcanvas = new bootstrap.Offcanvas(
     document.getElementById("navbarContent")
