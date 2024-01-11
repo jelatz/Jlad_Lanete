@@ -1,9 +1,19 @@
-@media only screen and (min-width: 776px){
+@media only screen and (min-width: 768px){
     nav{
         & .nav{width: unset !important;}
+    }
+
+    #home{padding-top: 154px;
+
     }
 }
 
 @media only screen and (min-width: 992px){
- 
+    #home{
+        & h1{letter-spacing: 1.5rem;}
+    }
+}
+
+@media only screen and (min-width: 1200px){
+
 }
