@@ -46,8 +46,8 @@ h4,h5,h6{font-family: var(--secondary-font);}
 p,span,small,mark{font-family: var(--tertiary-font)};
 
 a{text-decoration: none; font-family: var(--secondary-font);
-    &:hover{color: var(--tertiary)}
-    &:active{color: var(--tertiary);}
+    &:hover{color: var(--tertiary) !important;}
+    &:active{color: var(--tertiary) !important;}
 }
 
 *{font-family: 'Roboto', sans-serif;}
@@ -68,7 +68,9 @@ nav{width: 100%; background: var(--primary);
 #home{min-height: 100vh; padding-top: 214px;
     & h1{font-size: clamp(3em, 15vw, 15em); font-family: var(--primary-font);} 
     & #positions{min-height: 8rem; }
-    & a{width: fit-content;}    
+    & a{width: fit-content;
+        &:hover{color: var(--tertiary) !important;}
+    }   
 }
 
 .arrows {width: 60px;height: 72px;}
