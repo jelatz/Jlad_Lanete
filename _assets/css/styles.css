@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=David+Libre:wght@400;500;700&family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Varela&display=swap');
 
 
 /* ~~~~~Popup Modal~~~~~ */
@@ -24,9 +24,9 @@
     --secondary: #393E46;
     --tertiary: #00ADB5;
     --accent: #EEEEEE;
-    --primary-font: 'Assistant', sans-serif;
-    --secondary-font: 'David Libre', serif;
-    --tertiary-font: 'Hind Madurai', sans-serif;
+    --primary-font: 'Josefin Sans', sans-serif;
+    --secondary-font: 'Merriweather Sans', sans-serif;
+    --tertiary-font: 'Varela', sans-serif;
 }
 
 .bg-primary{background-color: var(--primary) !important;}
@@ -37,6 +37,9 @@
 .text-secondary{color: var(--secondary) !important;}
 .text-tertiary{color: var(--tertiary) !important;}
 .text-accent{color: var(--accent) !important;}
+.font-primary{font-family: var(--primary-font);}
+.font-secondary{font-family: var(--secondary-font);}
+.font-tertiary{font-family: var(--tertiary-font);}
 
 h1,h2,h3{font-family: var(--primary-font);}
 h4,h5,h6{font-family: var(--secondary-font);}
@@ -104,20 +107,26 @@ nav{width: 100%; background: var(--primary);
 }
 
 /* WORK */
-.parent {display: grid;grid-template-columns: repeat(5, 1fr);grid-template-rows: repeat(3, 1fr);grid-column-gap: 0px;
-grid-row-gap: 0px;
-    & h1{font-size: clamp(3em, 13vw, 30em); text-align: center;}
+.parent {display: flex; flex-direction: column; height: 100%; gap:1rem;
+    & h1{font-size: clamp(1em, 13vw, 30em); text-align: center;}
+    & img{width: 25rem;}
 }
 
-.div1 { grid-area: 1 / 1 / 2 / 5; }
-.div2 { grid-area: 2 / 2 / 3 / 5; background: red;}
-.div3 { grid-area: 2 / 1 / 4 / 2; background: blue;}
-.div4 { grid-area: 1 / 5 / 3 / 6; background: violet;}
-.div5 { grid-area: 3 / 2 / 4 / 6; background: pink;}
+.div1 {display: grid; place-items: center; width: 100%; margin: 0 auto;}
+.div2 {display: grid; place-items: center; width: 100%; margin: 0 auto;background: var(--secondary); }
+.div3 {display: grid; place-items: center; width: 100%; margin: 0 auto;background: var(--secondary); }
+.div4 {display: grid; place-items: center; width: 100%; margin: 0 auto;background: var(--secondary); }
+.div5 {display: grid; place-items: center; width: 100%; margin: 0 auto;background: var(--secondary); }
 
-#work{ height: 100% padding: 2rem 0;
+#work{padding: 2rem 0;
     & .skills{ justify-content: space-around; display: flex; flex-wrap: wrap;
         & img{width: 2rem;}
+    }
+    & .parent{
+        a{width: fit-content; margin: 0 auto;
+            &:hover{color: var(--tertiary) !important;}
+        }
+        
     }
 }
 
