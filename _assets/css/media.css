@@ -13,8 +13,8 @@
     }
 }
 @media only screen and (min-width: 1200px){
-        .parent {display: grid;grid-template-columns: repeat(4, 1fr);grid-template-rows: repeat(3, 1fr);grid-column-gap: 10px;grid-row-gap: 10px;
-    & h1{font-size: clamp(1em, 10vw, 30em); text-align: center; }
+        .parent {display: grid;grid-template-columns: repeat(4, 1fr);grid-template-rows: 130px 1fr 1fr;grid-column-gap: 15px;grid-row-gap: 15px;
+    & h1{font-size: clamp(1em, 10vw, 10em); letter-spacing: .2em;}
 }
 
 .div1 {display: grid; place-items: center; margin: unset; width: unset; grid-area: 1 / 1 / 2 / 4; }
