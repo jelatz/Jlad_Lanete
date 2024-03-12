@@ -3,9 +3,8 @@ $(document).ready(function () {
   const text2 = document.getElementById("positions");
   const texts = [
     " ",
-    "Web Developer",
-    "Virtual Assistant",
     "Software Engineer",
+    "Virtual Assistant",
   ];
   let index = 0;
   let charIndex = 0;

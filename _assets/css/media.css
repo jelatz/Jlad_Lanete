@@ -1,3 +1,8 @@
+@media only screen and (min-width: 395px){
+    .contact a:first-child::after{content: ""; background-color: var(--accent); position: absolute; right: -26px; height: 1.5rem; width: 2px; top: 4px;}
+    .contact{gap: 3rem !important; flex-direction: row !important;}
+}
+
 @media only screen and (min-width: 768px){
     nav{
         & .nav{width: unset !important;}
