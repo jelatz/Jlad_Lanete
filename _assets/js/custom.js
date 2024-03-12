@@ -35,4 +35,22 @@ $(document).ready(function () {
 
   // AOS INITIALIZATION
   AOS.init();
+
+  $('.skill').slick({
+    slidesToShow: 5,
+    slidesToScroll: 6,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 3000,
+    arrows: false,
+    dots: false,
+    adaptiveHeight: true,
+    centerMode: true,
+    infinite: true,
+    useCSS: false,
+    waitForAnimate: true,
+    variableWidth: false,
+    pauseOnHover: false,
+    infinite: true,
+  });
 });

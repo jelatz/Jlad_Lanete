@@ -38,7 +38,8 @@ a{text-decoration: none; font-family: var(--secondary-font);
 .shadow-box{box-shadow: 0px 0px 20px 0 var(--accent);}
 
 html,body{width: 100%; height: 100%;   scroll-behavior: smooth;}
-
+header{z-index: 999999;}
+header::before{content: ""; position: absolute; top: 0; left: 0; width: 100%; background-color: black; height: 100%; opacity: 40%; z-index: -1;}
 
 /* NAVIGATION */
 .projects:hover{color: var(--tertiary) !important;}
@@ -53,13 +54,22 @@ html,body{width: 100%; height: 100%;   scroll-behavior: smooth;}
 /* nav .nav-item:hover{transform: scale(1.2) !important;}
 
 /* HOME SECTION */
-#home{padding-top: 214px;
+#home{padding-top: 150px;
     & h1{font-size: clamp(3em, 10vw, 10em); font-family: var(--primary-font);} 
     & #positions{min-height: 8rem; }
     & a{width: fit-content;
-        &:hover{color: var(--tertiary) !important;}
+        &:hover{color: var(--tertiary) !important; background-color: var(--secondary) !important;}
     }   
 }
+
+#projects{padding-top: 250px;}
+.card{width: 18rem;}
+.card-body img:hover{transform: scale(1.2);}
+.back{position: relative;}
+.back:hover{color: var(--tertiary) !important;}
+.back::before{content: "\F12F"; position: absolute; left: -20px; top: 0; font-family: "bootstrap-icons";}
+
+.skill{display: flex; justify-content: center; gap: 5rem; width: 100%;}
 
 .arrows {width: 60px;height: 72px;}
 
