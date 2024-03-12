@@ -2,9 +2,7 @@
     nav{
         & .nav{width: unset !important;}
     }
-    #home{padding-top: 154px;
-
-    }
+    /* #home{padding-top: 154px;} */
 }
 
 @media only screen and (min-width: 992px){
