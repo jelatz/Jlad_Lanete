@@ -95,10 +95,7 @@ $(document).ready(function () {
           breakpoint: 500,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1,
-            centerMode: false,
-            variableWidth: false,
-            adaptiveHeight: true,
+            centerMode: true,
           }
         }
       ]
