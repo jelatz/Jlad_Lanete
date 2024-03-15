@@ -75,7 +75,7 @@ $(document).ready(function () {
     AOS.init();
 
     $('.skill').slick({
-      slidesToShow: 5,
+      slidesToShow: 4,
       slidesToScroll: 6,
       autoplay: true,
       autoplaySpeed: 0,
