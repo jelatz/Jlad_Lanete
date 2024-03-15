@@ -75,10 +75,9 @@ $(document).ready(function () {
     AOS.init();
 
     $('.skill').slick({
-      slidesToShow: 4,
-      slidesToScroll: 6,
+      slidesToShow: 5,
       autoplay: true,
-      autoplaySpeed: 0,
+      autoplaySpeed: 100,
       speed: 3000,
       arrows: false,
       dots: false,
@@ -89,16 +88,15 @@ $(document).ready(function () {
       waitForAnimate: true,
       variableWidth: false,
       pauseOnHover: false,
-      respondTo: 'min',
-      responsive: [
-        {
-          breakpoint: 500,
-          settings: {
-            slidesToShow: 2,
-            centerMode: true,
-          }
+      respondTo: 'window',
+      responsive: [{
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 2,
+          speed: 2000,
+          respondTo: 'slider',
         }
-      ]
+      }]
     });
   });
 });
