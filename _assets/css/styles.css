@@ -56,7 +56,7 @@ header::before{content: ""; position: absolute; top: 0; left: 0; width: 100%; ba
 /* HOME SECTION */
 #home{padding-top: 170px;
     & h1{font-size: clamp(3em, 10vw, 10em); font-family: var(--primary-font);} 
-    & #positions{min-height: 8rem; }
+    & #positions{height: 8rem; }
     & a{width: fit-content;
         &:hover{color: var(--tertiary) !important; background-color: var(--secondary) !important; }
     }   
