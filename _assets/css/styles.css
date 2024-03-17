@@ -56,12 +56,13 @@ header{z-index: 999999;}
 /* HOME SECTION */
 #home{padding-top: 170px;
     & h1{font-size: clamp(3em, 10vw, 10em); font-family: var(--primary-font);} 
-    & #positions{height: 8rem; }
+    & #positions{height: 4rem; }
     & a{width: fit-content;
         &:hover{color: var(--tertiary) !important; background-color: var(--secondary) !important; }
     }   
 }
-
+.profile-img{text-align: center; width: 100%;}
+.profile-img img{object-fit: cover; margin: 0 auto; border-radius: 50%; width: 150px; height: 150px;}
 
 #projects{padding-top: 250px;}
 .card{width: 18rem; padding: 1rem;}

@@ -99,4 +99,16 @@ $(document).ready(function () {
       }]
     });
   });
+
+  // tailwind config = {
+  //   theme: {
+  //     extend: {
+  //       colors: {
+  //         primary: 'red'
+  //       }
+  //     }
+  //   }
+  // }
+
+
 });
