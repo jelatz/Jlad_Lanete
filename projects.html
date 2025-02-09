@@ -6,6 +6,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="/_assets/css/bootstrap.css" />
     <link rel="stylesheet" href="/_assets/css/aos.css" />
     <link rel="stylesheet" href="/_assets/css/line-awesome.min.css" />
@@ -29,6 +31,7 @@
     />
     <link rel="stylesheet" href="/_assets/css/styles.css" />
     <link rel="stylesheet" href="/_assets/css/media.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Jlad Lanete Projects</title>
   </head>
@@ -63,7 +66,7 @@
               ><i class="bi bi-briefcase text-tertiary"></i>
             </a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a
               href="https://www.facebook.com/latz.lanete/"
               target="_blank"
@@ -78,7 +81,7 @@
               class="nav-link"
               ><i class="bi bi-instagram fs-4 text-accent"></i
             ></a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a
               href="https://www.linkedin.com/in/jladlanete/"
@@ -108,7 +111,7 @@
       <div class="container-fluid">
         <h1 class="text-white mx-auto text-center mb-5">Personal Projects</h1>
         <div class="row justify-content-center flex-row gap-5">
-          <div class="col-sm-auto d-flex justify-content-center">
+          <div class="col-sm-auto d-flex justify-content-center" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="800">
             <div class="card bg-accent">
               <img
                 src="_assets/images/projects/slider/saekyung.png"
@@ -133,7 +136,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-auto d-flex justify-content-center">
+          <div class="col-sm-auto d-flex justify-content-center" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="1200">
             <div class="card bg-accent">
               <img
                 src="_assets/images/projects/slider/ccrms.png"
@@ -160,7 +163,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-auto d-flex justify-content-center">
+          <div class="col-sm-auto d-flex justify-content-center" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="1600">
             <div class="card bg-accent">
               <img
                 src="_assets/images/projects/slider/healteeth.png"
@@ -185,7 +188,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-auto d-flex justify-content-center">
+          <div class="col-sm-auto d-flex justify-content-center" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="2000">
             <div class="card bg-accent">
               <img
                 src="_assets/images/projects/slider/rfid.png"
@@ -216,7 +219,7 @@
       <h1 class="text-white text-center my-5">Wordpress Projects</h1>
       <div class="container-fluid pb-3">
         <div class="row justify-content-center flex-row gap-5">
-          <div class="col-sm-auto d-flex justify-content-center">
+          <div class="col-sm-auto d-flex justify-content-center" data-aos="zoom-in-right" data-aos-easing="ease-in-out" data-aos-duration="800">
             <div class="card bg-accent">
               <img
                 src="_assets/images/projects/wordpress projects images/enrichment-unlimited.jpg"
@@ -235,7 +238,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-auto d-flex justify-content-center">
+          <div class="col-sm-auto d-flex justify-content-center" data-aos="zoom-in-right" data-aos-easing="ease-in-out" data-aos-duration="1200">
             <div class="card bg-accent">
               <img
                 src="_assets/images/projects/wordpress projects images/integrity-support-services.jpg"
@@ -256,7 +259,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-auto d-flex justify-content-center">
+          <div class="col-sm-auto d-flex justify-content-center" data-aos="zoom-in-left" data-aos-easing="ease-in-out" data-aos-duration="1600">
             <div class="card bg-accent">
               <img
                 src="_assets/images/projects/wordpress projects images/lyons-global.jpg"
@@ -275,7 +278,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-auto d-flex justify-content-center">
+          <div class="col-sm-auto d-flex justify-content-center" data-aos="zoom-in-left" data-aos-easing="ease-in-out" data-aos-duration="2000">
             <div class="card bg-accent">
               <img
                 src="_assets/images/projects/wordpress projects images/nj-leaf.jpg"
@@ -294,7 +297,8 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-auto d-flex justify-content-center">
+          <div class="col-sm-auto d-flex justify-content-center" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-duration="2400">
             <div class="card bg-accent">
               <img
                 src="_assets/images/projects/wordpress projects images/one-heart-medical-staffing.jpg"
@@ -320,6 +324,16 @@
     </section>
 
     <!-- SCRIPTS -->
+     <script>
+        document.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 50) {
+          header.classList.add("header-background");
+        } else {
+          header.classList.remove("header-background");
+        }
+      });
+     </script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
@@ -350,5 +364,10 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script>
+      AOS.init();
+
+      
+    </script>
   </body>
 </html>

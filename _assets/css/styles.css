@@ -50,6 +50,13 @@ header{z-index: 999999;}
     & a:hover{transform: scale(1.2) !important; transition: .2s ease-in-out; color: var(--tertiary) !important;}
 }
 .contact a{position: relative;}
+.header-background {
+    background:  rgb(37 34 34 / 80%) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+    transition: background 0.3s ease-in-out !important;
+  }
 /* .contact a:first-child::after{content: ""; background-color: var(--accent); position: absolute; right: -10px; height: 1.5rem; width: 2px; top: 4px;} */
 /* nav .nav-item:hover{transform: scale(1.2) !important;}
 
