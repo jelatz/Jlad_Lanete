@@ -73,6 +73,7 @@ header{z-index: 999999;}
 
 #projects{padding-top: 250px;}
 .card{width: 18rem; padding: 1rem;}
+.card:hover {transform: scale(1.1);transition: transform 0.5s ease;}
 .card-body{padding: 0 !important;}
 .card-body img:hover{transform: scale(1.2);}
 .back{position: relative;}
@@ -148,3 +149,6 @@ header{z-index: 999999;}
     }
 }
 
+
+.wordpress-projects-container{margin-top: 15rem}
+.personal-project-label{margin: 5rem 0; font-size: 3em}
