@@ -18,8 +18,8 @@
 
 
 <script setup>
-import Github from '@/components/Github.vue'
-import Linkedin from '@/components/LinkedIn.vue'
+import Github from '@/components/icons/Github.vue'
+import Linkedin from '@/components/icons/LinkedIn.vue'
 </script>
 
 <style lang="scss" scoped></style>

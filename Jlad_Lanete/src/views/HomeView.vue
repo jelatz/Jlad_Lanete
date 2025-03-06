@@ -8,9 +8,13 @@
             <span class="text-3xl md:text-6xl font-normal">{{ displayedText }}</span>
             <span v-if="isTyping" class="cursor text-3xl md:text-6xl">|</span>
         </div>
+        <p class="mt-10">View Curriculum Vitae</p>
+
+        <div>
+            
+        </div>
 
 
-        
     </div>
 </template>
 
