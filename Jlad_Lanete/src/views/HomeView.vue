@@ -10,8 +10,15 @@
         </div>
         <p class="mt-10">View Curriculum Vitae</p>
 
-        <div>
-            
+        <div class="mt-10 flex items-center space-x-5">
+            <Html class="w-10 text-red-300" />
+            <Css class="w-10 text-red-300"/>
+            <Javascript class="w-10 text-red-300"/>
+            <Bootstrap class="w-10 text-red-300"/>
+            <Tailwind class="w-10 text-red-300"/>
+            <Php class="w-10 text-red-300"/>
+            <Laravel class="w-10 text-red-300"/>
+            <Mysql class="w-10 text-red-300"/>
         </div>
 
 
@@ -20,6 +27,14 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
+import Html from "@/components/icons/Html.vue";
+import Css from "@/components/icons/Css.vue";   
+import Javascript from "@/components/icons/Javascript.vue";
+import Bootstrap from "@/components/icons/Bootstrap.vue";
+import Tailwind from "@/components/icons/Tailwind.vue";
+import Php from "@/components/icons/Php.vue";
+import Laravel from "@/components/icons/Laravel.vue";
+import Mysql from "@/components/icons/Mysql.vue";
 
 const texts = ["Software Engineer", "Virtual Assistant", "Web Developer"];
 const displayedText = ref("");
