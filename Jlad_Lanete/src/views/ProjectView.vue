@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto text-center">
+    <div class="container mx-auto px-5 md:px-0 text-center">
         <h1 class="text-5xl font-bold" data-aos="fade-down" data-aos-duration="2000">
             Projects
         </h1>
@@ -7,13 +7,15 @@
             <p class="text-left font-semibold mt-20 mb-10 text-3xl" data-aos="fade-right" data-aos-duration="2000">
                 Personal
             </p>
-            <ProjectCard v-for="personalProject in personalProjects" :key="personalProject.id" :data="personalProject" />
+            <ProjectCard v-for="personalProject in personalProjects" :key="personalProject.id"
+                :data="personalProject" />
 
             <p class="text-left font-semibold mt-40 mb-10 text-3xl" data-aos="fade-right" data-aos-duration="2000">
                 Wordpress
             </p>
 
-            <ProjectCard v-for="wordpressProject in wordpressProjects" :key="wordpressProject.id" :data="wordpressProject" />
+            <ProjectCard v-for="wordpressProject in wordpressProjects" :key="wordpressProject.id"
+                :data="wordpressProject" />
         </div>
     </div>
 </template>

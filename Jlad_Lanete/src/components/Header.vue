@@ -1,5 +1,5 @@
 <template>
-    <header class="w-full justify-between items-center flex p-10 flex-col md:flex-row space-y-10">
+    <header class="w-full justify-between items-center flex p-10 flex-col md:flex-row space-y-10 md:space-y-0">
         <div class="flex items-center flex-col md:flex-row space-y-5 md:space-y-0">
             <a href="mailto:lanetejlad@gmail.com"
                 class="relative text-center md:me-11 md:after:content-['|'] md:after:absolute md:after:-right-6 hover:text-[#00ADB5] text-lg font-bold">lanetejlad@gmail.com</a>
@@ -53,10 +53,12 @@ onUnmounted(() => {
 
 <style scoped>
 .header-background {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    transition: background 0.3s ease-in-out;
+    background: rgba(34, 40, 49, 0.1);
+        /* Using the hex color 222831 with transparency */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease-in-out, border-bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 </style>

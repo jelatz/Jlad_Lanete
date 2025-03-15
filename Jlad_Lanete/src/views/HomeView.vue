@@ -9,7 +9,10 @@
                 <span class="text-3xl md:text-6xl font-normal">{{ displayedText }}</span>
                 <span v-if="isTyping" class="cursor text-3xl md:text-6xl">|</span>
             </div>
-            <p class="my-20">View Curriculum Vitae</p>
+            <RouterLink to='/curriculum-vitae' class="text-[#00ADB5] hover:underline block my-20 text-lg">
+                Curriculum Vitae
+            </RouterLink>
+            <!-- <p class="my-20">View Curriculum Vitae</p> -->
         </div>
 
         <!-- Skills Icons -->
