@@ -6,9 +6,9 @@ const route = useRoute();
 </script>
 
 <template>
-    <div>
-      <Header v-if="route.name !== 'NotFound'" />
-      <!-- <header>
+  <div class="h-lvh">
+    <Header v-if="route.name !== 'NotFound'" />
+    <!-- <header>
         <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
         <div class="wrapper">
           <nav>
@@ -16,8 +16,8 @@ const route = useRoute();
           </nav>
         </div>
       </header> -->
-      <RouterView />
-    </div>
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>

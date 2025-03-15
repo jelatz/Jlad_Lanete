@@ -1,8 +1,8 @@
 <template>
-    <header class="w-full justify-between items-center flex p-10">
-        <div>
+    <header class="w-full justify-between items-center flex p-10 flex-col md:flex-row space-y-10">
+        <div class="flex items-center flex-col md:flex-row space-y-5 md:space-y-0">
             <a href="mailto:lanetejlad@gmail.com"
-                class="relative me-11 after:content-['|'] after:absolute after:-right-6 hover:text-[#00ADB5] text-lg font-bold">lanetejlad@gmail.com</a>
+                class="relative text-center md:me-11 md:after:content-['|'] md:after:absolute md:after:-right-6 hover:text-[#00ADB5] text-lg font-bold">lanetejlad@gmail.com</a>
             <a href="tel:+639760275569" class="hover:text-[#00ADB5] text-lg font-bold">09760275569</a>
         </div>
         <nav class="flex items-center space-x-10">

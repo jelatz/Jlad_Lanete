@@ -36,7 +36,7 @@ const personalProjects = [
         id: 1,
         ProjectTitle: "Saekyung Auxilium",
         ProjectDescription:
-            "A management information system for Saekyung 956 Condominium. ",
+            "My capstone project. A management information system for Saekyung 956 Condominium. It is a web-based system that aims to help the management of the condominium in managing their maintenance transactions.",
         ProjectImage: saekyungImage,
         githubLink: "https://github.com/jelatz/Saekyung-Auxilium",
         opposite: false
@@ -45,7 +45,7 @@ const personalProjects = [
         id: 2,
         ProjectTitle: "CCS Class Record Management System",
         ProjectDescription:
-            "A class record management system for the College of Computer Studies.",
+            "A class record management system for the College of Computer Studies. This is a final project for the subject Software Engineering.",
         ProjectImage: CCRMS,
         githubLink: "https://github.com/jelatz/CCRMS",
         opposite: true
@@ -54,7 +54,7 @@ const personalProjects = [
         id: 3,
         ProjectTitle: "Healteeth",
         ProjectDescription:
-            "A dental clinic management system.",
+            "A dental clinic management system. A practice project to learn more about the core of PHP and MySQL.",
         ProjectImage: Healteeth,
         githubLink: "https://github.com/jelatz/healteeth",
         opposite: false
@@ -63,7 +63,7 @@ const personalProjects = [
         id: 4,
         ProjectTitle: "RFID Processing Platform",
         ProjectDescription:
-            "A platform for processing RFID data.",
+            "A platform for processing RFID data. An application assigned to us by our professor for a hackathon.",
         ProjectImage: RFID,
         githubLink: "https://github.com/jelatz/RFID-PROCESSING-PLATFORM",
         opposite: true
@@ -84,7 +84,7 @@ const wordpressProjects = [
         id: 2,
         ProjectTitle: "Integrity Support & Services",
         ProjectDescription:
-        "Integrity Support & Services",
+        "A trusted and certified care provider for individuals with developmental disabilities.",
         ProjectImage: IntegritySupportServices,
         websiteLink: "https://www.integritysupportsandservices.com/",
         opposite: true
@@ -92,7 +92,7 @@ const wordpressProjects = [
     {
         id: 3,
         ProjectTitle: "Lyons Global",
-        ProjectDescription: "a pioneering international digital health solutions company based in the United States. Our mission is to provide easy-to-use, adaptable and accessible products that expand the geographical reach of healthcare delivery.",
+        ProjectDescription: "A pioneering international digital health solutions company based in the United States. Our mission is to provide easy-to-use, adaptable and accessible products that expand the geographical reach of healthcare delivery.",
         ProjectImage: LyonsGlobal,
         websiteLink: "https://lyonsglobal.us/about-us/",
         opposite: false
