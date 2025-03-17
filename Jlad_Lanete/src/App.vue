@@ -6,7 +6,7 @@ const route = useRoute();
 </script>
 
 <template>
-  <div class="h-lvh">
+  <div class="">
     <Header v-if="route.name !== 'NotFound' && route.name !== 'cv'" />
     <RouterView />
   </div>
