@@ -1,15 +1,15 @@
 <script setup>
 import { RouterLink, RouterView, useRoute } from 'vue-router'
-import Header from '@/components/Header.vue'
-
+import DefaultLayout from "./layouts/DefaultLayout.vue";
+import CVLayout from "./layouts/CVLayout.vue";
+const layouts = { DefaultLayout, CVLayout}
 const route = useRoute();
 </script>
 
 <template>
-  <div class="">
-    <Header v-if="route.name !== 'NotFound' && route.name !== 'cv'" />
+  <component :is="layouts[route.meta.layout || 'DefaultLayout']">
     <RouterView />
-  </div>
+    </component>
 </template>
 
 <style scoped>

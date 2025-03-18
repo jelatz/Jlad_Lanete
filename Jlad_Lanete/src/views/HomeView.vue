@@ -23,6 +23,8 @@
 </template>
 
 <script setup>
+defineProps({ layout: { type: String, default: "DefaultLayout" } });
+
 import { ref, onMounted, shallowRef } from "vue";
 import Html from "@/components/icons/Html.vue";
 import Css from "@/components/icons/Css.vue";   

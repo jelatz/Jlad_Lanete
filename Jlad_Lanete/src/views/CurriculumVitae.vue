@@ -36,6 +36,7 @@
 </template>
 
 <script setup>
+defineProps({ layout: { type: String, default: "CVLayout" } });
 import { ref, onMounted, onUnmounted } from 'vue';
 import cvPDF from '@/assets/docs/JojieLad_CV.pdf';
 import ContactInfo from '@/components/resume/ContactInfo.vue';
