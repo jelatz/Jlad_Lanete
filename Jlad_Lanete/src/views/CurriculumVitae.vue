@@ -28,7 +28,8 @@
                 </div>
 
                 <div class="border-b-2 col-span-2">
-
+                    <ProfileSummary />
+                    <WorkExperience />
                 </div>
             </div>
         </div>
@@ -43,6 +44,8 @@ import ContactInfo from '@/components/resume/ContactInfo.vue';
 import EducationInfo from '@/components/resume/EducationInfo.vue';
 import SkillsInfo from '@/components/resume/SkillsInfo.vue';
 import RerenceInfo from '@/components/resume/ReferenceInfo.vue';
+import ProfileSummary from '@/components/resume/ProfileSummary.vue';
+import WorkExperience from '@/components/resume/WorkExperience.vue';
 
 const isMobile = ref(false);
 
