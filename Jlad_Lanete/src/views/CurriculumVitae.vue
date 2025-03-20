@@ -1,5 +1,5 @@
 <template>
-    <div class="!bg-white h-screen pt-16 text-black">
+    <div class="!bg-white h-screen pt-16 text-black container mx-auto">
         <div class="grid place-items-center h-full" v-if="isMobile">
             <div class="px-10">
                 <h1>
@@ -27,7 +27,7 @@
                     <RerenceInfo />
                 </div>
 
-                <div class="border-b-2 col-span-2">
+                <div class="border-l-2 col-span-2">
                     <ProfileSummary />
                     <WorkExperience />
                 </div>
