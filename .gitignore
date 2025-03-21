@@ -7,24 +7,35 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-.DS_Store
-dist
-dist-ssr
-coverage
-*.local
+# Dependency directories
+node_modules/
+dist/
+dist-ssr/
+coverage/
 
+# Vite-related files
+*.local
+.vite/
+
+# Cypress testing files
 /cypress/videos/
 /cypress/screenshots/
 
-# Editor directories and files
+# Editor and IDE settings
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-
 *.tsbuildinfo
+
+# MacOS and system files
+.DS_Store
+Thumbs.db
+
+# Cache
+*.cache
+.cache/
