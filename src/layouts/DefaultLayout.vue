@@ -1,10 +1,10 @@
 <template>
-  <div class="bg-[#222831] text-[#ffffff] h-full min-h-screen">
-    <Header v-if="route.name !== 'NotFound'"/>
+  <div class="bg-[#222831] text-[#ffffff] grid items-center h-full min-h-screen">
+    <Header v-if="route.name !== 'NotFound'" />
     <main>
       <slot />
     </main>
-</div>
+  </div>
 </template>
 
 <script setup>

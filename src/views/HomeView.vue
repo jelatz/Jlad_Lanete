@@ -1,22 +1,23 @@
 <template>
-    <div class="text-center mt-7 flex flex-col items-stretch justify-between">
+    <div class="text-center flex flex-col items-stretch justify-between">
         <div>
             <img src="@/assets/images/jlad-profile.jpg" alt="profile image" class="rounded-full w-54 h-52 mx-auto" />
-            <h1 class="text-5xl md:text-9xl uppercase tracking-wider font-semibold text-[#00ADB5] mt-10">
+            <h1 class="text-5xl md:text-9xl uppercase tracking-wider font-semibold text-[#00ADB5] mt-5">
                 Jlad Lanete
             </h1>
             <div class="mt-10">
                 <span class="text-3xl md:text-6xl font-normal">{{ displayedText }}</span>
                 <span v-if="isTyping" class="cursor text-3xl md:text-6xl">|</span>
             </div>
-            <RouterLink to='/curriculum-vitae' class="text-[#00ADB5] hover:underline block my-20 text-lg">
+            <RouterLink to='/curriculum-vitae' class="text-[#00ADB5] hover:underline block my-10 text-lg">
                 Curriculum Vitae
             </RouterLink>
             <!-- <p class="my-20">View Curriculum Vitae</p> -->
         </div>
 
         <!-- Skills Icons -->
-        <div class="px-10 flex flex-wrap justify-between items-center gap-4 md:space-x-5 skills-icon mt-10">
+        <div
+            class="px-10 flex flex-wrap justify-between w-full fixed bottom-10 items-center gap-4 md:space-x-5 skills-icon">
             <component v-for="(icon, index) in skillIcons" :key="index" :is="icon" class="w-10 md:w-10" />
         </div>
     </div>
