@@ -15,7 +15,7 @@
             </div>
             <div>
                 <fai :icon="['fas', 'map-marker-alt']" class="mr-2 text-md" />
-                <small class="text-lg">Talamban, Cebu City Philippines</small>
+                <small class="text-lg">Cebu City Philippines</small>
             </div>
             <div>
                 <fai :icon="['fas', 'globe']" class="mr-2 text-md" />
