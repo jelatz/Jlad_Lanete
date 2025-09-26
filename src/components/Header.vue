@@ -1,6 +1,6 @@
 <template>
     <header
-        class="w-full justify-between items-center flex sticky top-0 p-10 flex-col md:flex-row space-y-10 md:space-y-0">
+        class="w-full justify-between items-center flex fixed top-0 p-10 flex-col md:flex-row space-y-10 md:space-y-0">
         <div class="flex items-center flex-col md:flex-row space-y-5 md:space-y-0">
             <a href="mailto:lanetejlad@gmail.com"
                 class="relative text-center md:me-11 md:after:content-['|'] md:after:absolute md:after:-right-6 hover:text-[#00ADB5] text-lg font-bold">lanetejlad@gmail.com</a>
