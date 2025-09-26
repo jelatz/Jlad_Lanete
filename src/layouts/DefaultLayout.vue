@@ -14,6 +14,4 @@ import { RouterLink, RouterView, useRoute } from 'vue-router'
 const route = useRoute()
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

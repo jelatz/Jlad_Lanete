@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto px-5 pt-[108px] md:px-0 text-center">
+    <div class="container mx-auto px-5 pt-[108px] relative md:px-0 text-center">
         <h1 class="text-5xl font-bold" data-aos="fade-down" data-aos-duration="2000">
             Projects
         </h1>
@@ -86,7 +86,7 @@ const wordpressProjects = [
         id: 2,
         ProjectTitle: "Integrity Support & Services",
         ProjectDescription:
-        "A trusted and certified care provider for individuals with developmental disabilities.",
+            "A trusted and certified care provider for individuals with developmental disabilities.",
         ProjectImage: IntegritySupportServices,
         websiteLink: "https://www.integritysupportsandservices.com/",
         opposite: true
