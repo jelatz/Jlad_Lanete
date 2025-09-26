@@ -1,6 +1,6 @@
 <template>
-    <header class="top-0 left-0 w-full fixed flex items-center justify-between px-5 md:px-10
-           h-20 md:h-24 z-[9999] header-background transition-all">
+    <header class="top-0 left-0 w-full p-10 fixed flex items-center justify-between px-5 md:px-10
+           z-[9999] header-background transition-all">
         <div class="flex flex-col md:flex-row items-center gap-3 md:gap-8">
             <a href="mailto:lanetejlad@gmail.com" class="relative font-bold text-lg hover:text-[#00ADB5] text-center md:me-8
                 md:after:content-['|'] md:after:absolute md:after:-right-9">
