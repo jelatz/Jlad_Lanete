@@ -3,7 +3,7 @@
            h-20 md:h-24 z-[9999] header-background transition-all">
         <div class="flex flex-col md:flex-row items-center gap-3 md:gap-8">
             <a href="mailto:lanetejlad@gmail.com" class="relative font-bold text-lg hover:text-[#00ADB5] text-center md:me-8
-                md:after:content-['|'] md:after:absolute md:after:-right-5">
+                md:after:content-['|'] md:after:absolute md:after:-right-9">
                 lanetejlad@gmail.com
             </a>
             <a href="tel:+639760275569" class="font-bold text-lg hover:text-[#00ADB5]">
