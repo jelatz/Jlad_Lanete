@@ -15,11 +15,6 @@
             <!-- <p class="my-20">View Curriculum Vitae</p> -->
         </div>
 
-        <!-- Skills Icons -->
-        <div
-            class="px-10 flex flex-wrap justify-between w-full fixed bottom-10 items-center gap-4 md:space-x-5 skills-icon">
-            <component v-for="(icon, index) in skillIcons" :key="index" :is="icon" class="w-10 md:w-10" />
-        </div>
     </div>
 </template>
 
@@ -28,7 +23,7 @@ defineProps({ layout: { type: String, default: "DefaultLayout" } });
 
 import { ref, onMounted, shallowRef } from "vue";
 import Html from "@/components/icons/Html.vue";
-import Css from "@/components/icons/Css.vue";   
+import Css from "@/components/icons/Css.vue";
 import Javascript from "@/components/icons/Javascript.vue";
 import Bootstrap from "@/components/icons/Bootstrap.vue";
 import Tailwind from "@/components/icons/Tailwind.vue";
@@ -42,12 +37,7 @@ import Codeigniter from "@/components/icons/Codeigniter.vue";
 import Git from "@/components/icons/Git.vue";
 import Gitlab from "@/components/icons/Gitlab.vue";
 
-// Store icons in an array
-const skillIcons = shallowRef([
-    Html, Css, Javascript, Bootstrap, Tailwind, VueIcon,
-    Php, Codeigniter, Laravel, Mysql, Wordpress,
-    Github, Gitlab, Git
-]);
+
 
 const texts = ["Software Engineer", "Virtual Assistant", "Web Developer"];
 const displayedText = ref("");
