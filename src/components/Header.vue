@@ -1,22 +1,26 @@
 <template>
-    <header
-        class="w-full justify-between items-center flex fixed top-0 p-10 flex-col md:flex-row space-y-10 md:space-y-0">
-        <div class="flex items-center flex-col md:flex-row space-y-5 md:space-y-0">
-            <a href="mailto:lanetejlad@gmail.com"
-                class="relative text-center md:me-11 md:after:content-['|'] md:after:absolute md:after:-right-6 hover:text-[#00ADB5] text-lg font-bold">lanetejlad@gmail.com</a>
-            <a href="tel:+639760275569" class="hover:text-[#00ADB5] text-lg font-bold">09760275569</a>
+    <header class="fixed top-0 left-0 w-full flex items-center justify-between px-5 md:px-10
+           h-20 md:h-24 z-[9999] header-background transition-all">
+        <div class="flex flex-col md:flex-row items-center gap-3 md:gap-8">
+            <a href="mailto:lanetejlad@gmail.com" class="relative font-bold text-lg hover:text-[#00ADB5] text-center md:me-8
+                md:after:content-['|'] md:after:absolute md:after:-right-5">
+                lanetejlad@gmail.com
+            </a>
+            <a href="tel:+639760275569" class="font-bold text-lg hover:text-[#00ADB5]">
+                09760275569
+            </a>
         </div>
-        <nav class="flex items-center space-x-10">
-            <RouterLink to="/projects" class="text-white hover:text-[#00ADB5]" v-if="route.name !== 'projects'">
+        <nav class="flex items-center gap-6">
+            <RouterLink to="/projects" class="hover:text-[#00ADB5]" v-if="route.name !== 'projects'">
                 <ProjectsIcon />
             </RouterLink>
-            <RouterLink to="/" class="text-white hover:text-[#00ADB5]" v-else>
+            <RouterLink to="/" class="hover:text-[#00ADB5]" v-else>
                 <HomeIcon />
             </RouterLink>
-            <a href="https://www.linkedin.com/in/jladlanete/" target="_blank" class="text-white hover:text-[#00ADB5]">
+            <a href="https://www.linkedin.com/in/jladlanete/" target="_blank" class="hover:text-[#00ADB5]">
                 <Linkedin />
             </a>
-            <a href="https://github.com/jelatz" target="_blank" class="text-white hover:text-[#00ADB5]">
+            <a href="https://github.com/jelatz" target="_blank" class="hover:text-[#00ADB5]">
                 <Github />
             </a>
         </nav>
@@ -24,46 +28,34 @@
 </template>
 
 <script setup>
-import { onMounted, onUnmounted } from 'vue';
-import Github from '@/components/icons/Github.vue';
-import Linkedin from '@/components/icons/LinkedIn.vue';
-import ProjectsIcon from "@/components/icons/ProjectsIcon.vue";
-import HomeIcon from "@/components/icons/HomeIcon.vue";
-import { RouterLink, useRoute } from 'vue-router';
+import { onMounted, onUnmounted } from 'vue'
+import { RouterLink, useRoute } from 'vue-router'
+import Github from '@/components/icons/Github.vue'
+import Linkedin from '@/components/icons/LinkedIn.vue'
+import ProjectsIcon from "@/components/icons/ProjectsIcon.vue"
+import HomeIcon from "@/components/icons/HomeIcon.vue"
 
-const route = useRoute();
-
+const route = useRoute()
 
 const handleScroll = () => {
-    const header = document.querySelector('header');
+    const header = document.querySelector('header')
     if (window.scrollY > 50) {
-        header.classList.add('header-background');
+        header.classList.add('header-background')
     } else {
-        header.classList.remove('header-background');
+        header.classList.remove('header-background')
     }
-};
+}
 
-onMounted(() => {
-    window.addEventListener('scroll', handleScroll);
-});
-
-onUnmounted(() => {
-    window.removeEventListener('scroll', handleScroll);
-});
+onMounted(() => window.addEventListener('scroll', handleScroll))
+onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 </script>
 
 <style scoped>
 .header-background {
     background: rgba(34, 40, 49, 0.95);
-    /* Darker background */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    transition: background 0.3s ease-in-out,
-        border-bottom 0.3s ease-in-out,
-        box-shadow 0.3s ease-in-out;
-    z-index: 9999;
-    /* stays above everything */
 }
 </style>

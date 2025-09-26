@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-[#222831] text-[#ffffff] grid items-center h-full min-h-screen">
+  <div class="bg-[#222831] text-white min-h-screen flex flex-col">
     <Header v-if="route.name !== 'NotFound'" />
-    <main>
+    <main class="flex-1 pt-20 md:pt-24">
       <slot />
     </main>
   </div>
@@ -9,9 +9,7 @@
 
 <script setup>
 import Header from '@/components/Header.vue'
-import { RouterLink, RouterView, useRoute } from 'vue-router'
+import { useRoute } from 'vue-router'
 
 const route = useRoute()
 </script>
-
-<style scoped></style>
