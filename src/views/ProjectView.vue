@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto px-5 pt-[108px] relative md:px-0 text-center overflow-x-hidden">
+    <div class="container mx-auto px-5 pt-[12rem] relative md:px-0 text-center overflow-x-hidden">
         <h1 class="text-5xl font-bold" data-aos="fade-down" data-aos-duration="2000">
             Projects
         </h1>
