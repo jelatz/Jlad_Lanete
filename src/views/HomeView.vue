@@ -32,7 +32,7 @@ defineProps({ layout: { type: String, default: "DefaultLayout" } });
 
 import { ref, onMounted } from "vue";
 
-const texts = ["Software Engineer", "Virtual Assistant", "Web Developer"];
+const texts = ["Software Engineer", "Virtual Assistant", "AI Automation Engineer"];
 const displayedText = ref("");
 const currentIndex = ref(0);
 const isTyping = ref(true);
