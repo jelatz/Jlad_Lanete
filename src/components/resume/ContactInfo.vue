@@ -1,27 +1,25 @@
 <template>
-    <div class="border-b-2 px-5 py-10">
-        <h4
-            class="text-left text-2xl z-50 tracking-[5px] relative font-bold before:content-[''] before:w-8 before:h-8 before:rounded-full before:bg-slate-300 before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-3 before:z-0">
-            <span class="relative z-10">C</span>ONTACT
+    <div class="border-b border-slate-200 px-8 py-10">
+        <h4 class="flex items-center gap-3 text-base font-bold uppercase tracking-[0.2em] text-slate-900">
+            <span class="h-4 w-1 rounded-full bg-[#0d9488]"></span>
+            Contact
         </h4>
-        <div class="flex flex-col mt-3">
-            <div>
-                <fai :icon="['fas', 'phone']" class="mr-2 text-md" />
-                <a href="tel:+639760275569"><small class="text-lg">+639760275569</small></a>
+        <div class="flex flex-col gap-2.5 mt-4 text-[15px] text-slate-600">
+            <div class="flex items-center">
+                <fai :icon="['fas', 'phone']" class="mr-3 w-4 text-[#0d9488]" />
+                <a href="tel:+639760275569" class="hover:text-[#0d9488] transition-colors">+639760275569</a>
             </div>
-            <div>
-                <fai :icon="['fas', 'envelope']" class="mr-2 text-md" />
-                <a href="mailto:lanetejlad@gmail.com"><small class="text-lg">lanetejlad@gmail.com</small></a>
+            <div class="flex items-center">
+                <fai :icon="['fas', 'envelope']" class="mr-3 w-4 text-[#0d9488]" />
+                <a href="mailto:lanetejlad@gmail.com" class="hover:text-[#0d9488] transition-colors">lanetejlad@gmail.com</a>
             </div>
-            <div>
-                <fai :icon="['fas', 'map-marker-alt']" class="mr-2 text-md" />
-                <small class="text-lg">Cebu City Philippines</small>
+            <div class="flex items-center">
+                <fai :icon="['fas', 'map-marker-alt']" class="mr-3 w-4 text-[#0d9488]" />
+                <span>Cebu City, Philippines</span>
             </div>
-            <div>
-                <fai :icon="['fas', 'globe']" class="mr-2 text-md" />
-                <a href="https://jladlanete.vercel.app">
-                    <small class="text-lg">jladlanete.vercel.app</small>
-                </a>
+            <div class="flex items-center">
+                <fai :icon="['fas', 'globe']" class="mr-3 w-4 text-[#0d9488]" />
+                <a href="https://jladlanete.vercel.app" class="hover:text-[#0d9488] transition-colors">jladlanete.vercel.app</a>
             </div>
         </div>
     </div>

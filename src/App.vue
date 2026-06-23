@@ -13,7 +13,7 @@ const route = useRoute();
 </template>
 
 <style scoped>
-*{
-  font-family: "Roboto", sans-serif;
+* {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 </style>

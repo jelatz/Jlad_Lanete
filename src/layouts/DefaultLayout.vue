@@ -1,14 +1,15 @@
 <template>
-  <div class="bg-[#222831] text-white min-h-screen grid place-items-center min-w-screen">
+  <div class="bg-white text-slate-900 min-h-screen grid place-items-center min-w-screen">
     <Header v-if="route.name !== 'NotFound'" />
-    <main class="">
+    <main class="w-full">
       <slot />
     </main>
 
     <!-- Skills Icons -->
     <div v-if="route.name === 'home'"
-      class="px-10 flex absolute flex-wrap w-full justify-between bottom-10 items-center gap-4 md:space-x-5 skills-icon">
-      <component v-for="(icon, index) in skillIcons" :key="index" :is="icon" class="w-10 md:w-10" />
+      class="px-6 md:px-10 flex absolute flex-wrap w-full justify-center md:justify-between bottom-8 items-center gap-5 md:gap-4 skills-icon">
+      <component v-for="(icon, index) in skillIcons" :key="index" :is="icon"
+        class="w-7 md:w-9 transition-transform hover:-translate-y-1" />
     </div>
   </div>
 </template>
@@ -41,3 +42,14 @@ const skillIcons = shallowRef([
 
 const route = useRoute()
 </script>
+
+<style scoped>
+.skills-icon > * {
+  color: #94a3b8;
+  transition: color 0.2s ease;
+}
+
+.skills-icon > *:hover {
+  color: var(--color-accent, #0d9488);
+}
+</style>

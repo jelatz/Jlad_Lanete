@@ -1,16 +1,13 @@
 <template>
-    <div class="border-b-2 px-5 py-10">
-        <h4
-            class="text-left text-2xl z-50 tracking-[5px] relative font-bold before:content-[''] before:w-8 before:h-8 before:rounded-full before:bg-slate-300 before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-3 before:z-0">
-            <span class="relative z-10">E</span>DUCATION
+    <div class="border-b border-slate-200 px-8 py-10">
+        <h4 class="flex items-center gap-3 text-base font-bold uppercase tracking-[0.2em] text-slate-900">
+            <span class="h-4 w-1 rounded-full bg-[#0d9488]"></span>
+            Education
         </h4>
-        <div class="flex mt-3 flex-col">
-            <small class="font-bold my-2 tracking-wider text-lg">2019 - 2023 UNIVERSITY OF SOUTHERN PHILIPPINES</small>
-            <ul class="list-disc ml-4">
-                <li>
-                    <small class="list-disc text-lg">Bachelor of Information Technology</small>
-                </li>
-            </ul>
+        <div class="flex mt-4 flex-col">
+            <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">2019 &ndash; 2023</p>
+            <p class="mt-1 text-[15px] font-semibold text-slate-900">University of Southern Philippines</p>
+            <p class="mt-1 text-[15px] text-slate-600">Bachelor of Information Technology</p>
         </div>
     </div>
 </template>

@@ -1,43 +1,32 @@
 <template>
-    <div class="text-center flex flex-col items-stretch justify-between">
-        <div>
-            <img src="@/assets/images/jlad-profile.jpg" alt="profile image" class="rounded-full w-54 h-52 mx-auto" />
-            <h1 class="text-5xl md:text-9xl uppercase tracking-wider font-semibold text-[#00ADB5] mt-5">
-                Jlad Lanete
-            </h1>
-            <div class="mt-10">
-                <span class="text-3xl md:text-6xl font-normal">{{ displayedText }}</span>
-                <span v-if="isTyping" class="cursor text-3xl md:text-6xl">|</span>
-            </div>
-            <RouterLink to='/curriculum-vitae' class="text-[#00ADB5] hover:underline block my-10 text-lg">
-                Curriculum Vitae
-            </RouterLink>
-            <!-- <p class="my-20">View Curriculum Vitae</p> -->
+    <div class="text-center flex flex-col items-center justify-center px-6">
+        <img src="@/assets/images/jlad-profile.jpg" alt="Jlad Lanete"
+            class="rounded-full w-36 h-36 md:w-44 md:h-44 object-cover mx-auto ring-1 ring-slate-200 shadow-sm" />
+
+        <p class="mt-8 text-sm font-medium uppercase tracking-[0.3em] text-[#0d9488]">
+            Portfolio
+        </p>
+
+        <h1 class="text-5xl md:text-8xl font-bold tracking-tight text-slate-900 mt-3">
+            Jlad Lanete
+        </h1>
+
+        <div class="mt-6 h-10 md:h-14 flex items-center justify-center">
+            <span class="text-2xl md:text-4xl font-light text-slate-500">{{ displayedText }}</span>
+            <span v-if="isTyping" class="cursor text-2xl md:text-4xl font-light text-[#0d9488] ml-0.5">|</span>
         </div>
 
+        <RouterLink to="/curriculum-vitae"
+            class="inline-flex items-center gap-2 mt-10 rounded-full bg-[#0d9488] px-7 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#0f766e] hover:shadow-md">
+            View Curriculum Vitae
+        </RouterLink>
     </div>
 </template>
 
 <script setup>
 defineProps({ layout: { type: String, default: "DefaultLayout" } });
 
-import { ref, onMounted, shallowRef } from "vue";
-import Html from "@/components/icons/Html.vue";
-import Css from "@/components/icons/Css.vue";
-import Javascript from "@/components/icons/Javascript.vue";
-import Bootstrap from "@/components/icons/Bootstrap.vue";
-import Tailwind from "@/components/icons/Tailwind.vue";
-import Php from "@/components/icons/Php.vue";
-import Laravel from "@/components/icons/Laravel.vue";
-import Mysql from "@/components/icons/Mysql.vue";
-import Github from "@/components/icons/Github.vue";
-import Wordpress from "@/components/icons/Wordpress.vue";
-import VueIcon from "@/components/icons/VueIcon.vue";
-import Codeigniter from "@/components/icons/Codeigniter.vue";
-import Git from "@/components/icons/Git.vue";
-import Gitlab from "@/components/icons/Gitlab.vue";
-
-
+import { ref, onMounted } from "vue";
 
 const texts = ["Software Engineer", "Virtual Assistant", "Web Developer"];
 const displayedText = ref("");
@@ -72,7 +61,13 @@ onMounted(typeAndDeleteText);
 </script>
 
 <style scoped>
-.skills-icon>* {
-    color: #00adb5;
+.cursor {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
 </style>

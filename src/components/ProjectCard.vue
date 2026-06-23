@@ -1,41 +1,27 @@
 <template>
-  <div class="w-full flex flex-col md:flex-row p-10 space-y-5 md:space-y-24">
-    <template v-if="!data.opposite">
-      <div class="w-full md:w-[50%]" data-aos="fade-right" data-aos-duration="1500">
-        <img :src="data.ProjectImage" alt="Saekyung Auxilium"
-          class="md:transition-transform md:duration-300 md:[transform:perspective(700px)_rotateY(15deg)_translateY(10px)_rotateX(-10deg)] md:hover:[transform:perspective(1000px)_rotateY(-10deg)_translateY(-20px)_rotateX(10deg)_scale(1.1)] w-[40rem]" />
-      </div>
-      <div class="w-full md:w-[50%] md:text-right md:pl-16" data-aos="fade-left" data-aos-duration="1500">
-        <h1 class="text-2xl font-bold">{{ data.ProjectTitle }}</h1>
-        <p class="text-sm mt-3">{{ data.ProjectDescription }}</p>
-        <a :href="data.websiteLink" target="_blank" v-if="data.websiteLink" class="text-blue-500 hover:underline">
-          Visit Website
-        </a>
-        <a :href="data.githubLink" target="_blank" v-if="data.githubLink" class="text-blue-500 hover:underline">
-          View on GitHub
-        </a>
-      </div>
-    </template>
-    <template v-else>
-      <div class="w-full flex flex-col-reverse space-y-10 md:flex-row">
-        <div class="w-full md:w-[50%] md:text-left md:pr-16 mt-5 md:mt-0" data-aos="fade-right"
-          data-aos-duration="1500">
-          <h1 class="text-2xl font-bold">{{ data.ProjectTitle }}</h1>
-          <p class="text-sm mt-3">{{ data.ProjectDescription }}</p>
-          <a :href="data.websiteLink" target="_blank" v-if="data.websiteLink" class="text-blue-500 hover:underline">
-            Visit Website
-          </a>
-          <a :href="data.githubLink" target="_blank" v-if="data.githubLink" class="text-blue-500 hover:underline">
-            View on GitHub
-          </a>
-        </div>
-        <div class="w-full md:w-[50%]" data-aos="fade-left" data-aos-duration="1500">
-          <img :src="data.ProjectImage" alt="Saekyung Auxilium"
-            class="md:transition-transform md:duration-300 md:[transform:perspective(1000px)_rotateY(-10deg)_translateY(-20px)_rotateX(10deg)] md:hover:[transform:perspective(1000px)_rotateY(10deg)_translateY(10px)_rotateX(-10deg)_scale(1.1)] w-[40rem]" />
-        </div>
-      </div>
-    </template>
-  </div>
+  <article
+    class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-slate-300"
+    data-aos="fade-up" data-aos-duration="800">
+    <div class="aspect-[16/10] overflow-hidden bg-slate-50">
+      <img :src="data.ProjectImage" :alt="data.ProjectTitle"
+        class="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />
+    </div>
+    <div class="flex flex-1 flex-col p-6">
+      <h2 class="text-lg font-semibold text-slate-900">{{ data.ProjectTitle }}</h2>
+      <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-500">{{ data.ProjectDescription }}</p>
+
+      <a v-if="data.websiteLink" :href="data.websiteLink" target="_blank" rel="noopener"
+        class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-[#0d9488] hover:text-[#0f766e]">
+        Visit Website
+        <span aria-hidden="true" class="transition-transform group-hover:translate-x-0.5">&rarr;</span>
+      </a>
+      <a v-else-if="data.githubLink" :href="data.githubLink" target="_blank" rel="noopener"
+        class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-[#0d9488] hover:text-[#0f766e]">
+        View on GitHub
+        <span aria-hidden="true" class="transition-transform group-hover:translate-x-0.5">&rarr;</span>
+      </a>
+    </div>
+  </article>
 </template>
 
 <script setup>
