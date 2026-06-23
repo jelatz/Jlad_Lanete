@@ -11,6 +11,9 @@ export default defineConfig({
     vueDevTools(),
     tailwindcss()
   ],
+  server: {
+    port: process.env.PORT ? Number(process.env.PORT) : 5173,
+  },
   build:{
     outDir: 'dist'
   },

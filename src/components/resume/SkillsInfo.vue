@@ -1,56 +1,40 @@
 <template>
-    <div class="border-b-2 px-5 py-10">
-        <h4
-            class="text-left text-2xl z-50 tracking-[5px] relative font-bold before:content-[''] before:w-8 before:h-8 before:rounded-full before:bg-slate-300 before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-3 before:z-0">
-            <span class="relative z-10">S</span>KILLS
+    <div class="border-b border-slate-200 px-8 py-10">
+        <h4 class="flex items-center gap-3 text-base font-bold uppercase tracking-[0.2em] text-slate-900">
+            <span class="h-4 w-1 rounded-full bg-[#0d9488]"></span>
+            Skills
         </h4>
-        <div class="flex mt-3 flex-col">
-            <small class="font-bold my-2 tracking-wider text-lg">Technical</small>
-            <ul class="list-disc ml-4">
-                <li>
-                    <small class="list-disc text-lg">HTML,CSS,Javascript</small>
-                </li>
-                <li>
-                    <small class="list-disc text-lg">PHP, MYSQL</small>
-                </li>
-                <li>
-                    <small class="list-disc text-lg">Laravel,Wordpress, CI</small>
-                </li>
-                <li>
-                    <small class="list-disc text-lg">GIT,Github,Gitlab</small>
-                </li>
-                <li>
-                    <small class="list-disc text-lg">Adobe Analytics</small>
-                </li>
-            </ul>
-            <small class="font-bold my-2 tracking-wider text-lg">Soft</small>
-            <ul class="list-disc ml-4">
-                <li>
-                    <small class="list-disc text-lg">Teamwork</small>
-                </li>
-                <li>
-                    <small class="text-lg">Time Management</small>
-                </li>
-                <li>
-                    <small class="text-lg">Problem Solving</small>
-                </li>
-                <li>
-                    <small class="text-lg">Adaptibility</small>
-                </li>
-                <li>
-                    <small class="text-lg">Critical Thinking</small>
-                </li>
-                <li>
-                    <small class="text-lg">Communication</small>
-                </li>
-            </ul>
+        <div class="flex mt-4 flex-col">
+            <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Technical</p>
+            <div class="mt-2.5 flex flex-wrap gap-2">
+                <span v-for="skill in technicalSkills" :key="skill"
+                    class="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">
+                    {{ skill }}
+                </span>
+            </div>
+
+            <p class="mt-5 text-xs font-semibold uppercase tracking-wider text-slate-400">Soft</p>
+            <div class="mt-2.5 flex flex-wrap gap-2">
+                <span v-for="skill in softSkills" :key="skill"
+                    class="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">
+                    {{ skill }}
+                </span>
+            </div>
         </div>
     </div>
 </template>
 
 
 <script setup>
+const technicalSkills = [
+    "HTML", "CSS", "JavaScript", "PHP", "MySQL",
+    "Laravel", "WordPress", "CodeIgniter", "Git", "GitHub", "GitLab", "Adobe Analytics"
+];
 
+const softSkills = [
+    "Teamwork", "Time Management", "Problem Solving",
+    "Adaptability", "Critical Thinking", "Communication"
+];
 </script>
 
 <style scoped></style>

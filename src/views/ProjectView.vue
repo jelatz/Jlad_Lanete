@@ -1,16 +1,27 @@
 <template>
-    <div class="container mx-auto px-5 pt-[12rem] relative md:px-0 text-center overflow-x-hidden">
-        <h1 class="text-5xl font-bold" data-aos="fade-down" data-aos-duration="2000">
-            Projects
-        </h1>
-        <div class="mt-10">
-            <p class="text-left font-semibold mt-20 mb-10 text-3xl" data-aos="fade-right" data-aos-duration="2000">
-                Wordpress
+    <div class="mx-auto max-w-6xl px-6 pt-32 pb-24 md:pt-40 overflow-x-hidden">
+        <header class="max-w-2xl" data-aos="fade-up" data-aos-duration="800">
+            <p class="text-sm font-medium uppercase tracking-[0.3em] text-[#0d9488]">Selected Work</p>
+            <h1 class="mt-3 text-4xl md:text-5xl font-bold tracking-tight text-slate-900">
+                Projects
+            </h1>
+            <p class="mt-4 text-base leading-relaxed text-slate-500">
+                A selection of WordPress websites I have designed and developed for clients across
+                healthcare, coaching, and consulting.
             </p>
+        </header>
 
-            <ProjectCard v-for="wordpressProject in wordpressProjects" :key="wordpressProject.id"
-                :data="wordpressProject" />
-        </div>
+        <section class="mt-14">
+            <div class="flex items-center gap-4">
+                <h2 class="text-sm font-semibold uppercase tracking-widest text-slate-400">WordPress</h2>
+                <span class="h-px flex-1 bg-slate-200"></span>
+            </div>
+
+            <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <ProjectCard v-for="wordpressProject in wordpressProjects" :key="wordpressProject.id"
+                    :data="wordpressProject" />
+            </div>
+        </section>
     </div>
 </template>
 
