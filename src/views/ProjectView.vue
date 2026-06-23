@@ -5,12 +5,6 @@
         </h1>
         <div class="mt-10">
             <p class="text-left font-semibold mt-20 mb-10 text-3xl" data-aos="fade-right" data-aos-duration="2000">
-                Personal
-            </p>
-            <ProjectCard v-for="personalProject in personalProjects" :key="personalProject.id"
-                :data="personalProject" />
-
-            <p class="text-left font-semibold mt-40 mb-10 text-3xl" data-aos="fade-right" data-aos-duration="2000">
                 Wordpress
             </p>
 
@@ -22,55 +16,12 @@
 
 <script setup>
 import ProjectCard from "@/components/ProjectCard.vue";
-import saekyungImage from "@/assets/images/projects/saekyung-auxilium/index.png";
-import CCRMS from "@/assets/images/projects/ccrms/ccrms.png";
-import Healteeth from "@/assets/images/projects/healteeth/healteeth.png";
-import RFID from "@/assets/images/projects/rfid/rfid.png";
 import Enrichment from "@/assets/images/projects/wordpress/enrichment-unlimited.jpg";
 import IntegritySupportServices from "@/assets/images/projects/wordpress/integrity-support-services.jpg";
 import LyonsGlobal from "@/assets/images/projects/wordpress/lyons-global.jpg";
 import NJLeaf from "@/assets/images/projects/wordpress/nj-leaf.jpg";
 import OneHeartMedicalStaffing from "@/assets/images/projects/wordpress/one-heart-medical-staffing.jpg";
 
-
-const personalProjects = [
-    {
-        id: 1,
-        ProjectTitle: "Saekyung Auxilium",
-        ProjectDescription:
-            "My capstone project. A management information system for Saekyung 956 Condominium. It is a web-based system that aims to help the management of the condominium in managing their maintenance transactions.",
-        ProjectImage: saekyungImage,
-        githubLink: "https://github.com/jelatz/Saekyung-Auxilium",
-        opposite: false
-    },
-    {
-        id: 2,
-        ProjectTitle: "CCS Class Record Management System",
-        ProjectDescription:
-            "A class record management system for the College of Computer Studies. This is a final project for the subject Software Engineering.",
-        ProjectImage: CCRMS,
-        githubLink: "https://github.com/jelatz/CCRMS",
-        opposite: true
-    },
-    {
-        id: 3,
-        ProjectTitle: "Healteeth",
-        ProjectDescription:
-            "A dental clinic management system. A practice project to learn more about the core of PHP and MySQL.",
-        ProjectImage: Healteeth,
-        githubLink: "https://github.com/jelatz/healteeth",
-        opposite: false
-    },
-    {
-        id: 4,
-        ProjectTitle: "RFID Processing Platform",
-        ProjectDescription:
-            "A platform for processing RFID data. An application assigned to us by our professor for a hackathon.",
-        ProjectImage: RFID,
-        githubLink: "https://github.com/jelatz/RFID-PROCESSING-PLATFORM",
-        opposite: true
-    }
-];
 
 const wordpressProjects = [
     {
