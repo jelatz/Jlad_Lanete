@@ -1,14 +1,15 @@
 <template>
-    <div class="border-b border-slate-200 px-8 py-10">
-        <h4 class="flex items-center gap-3 text-base font-bold uppercase tracking-[0.2em] text-slate-900">
-            <span class="h-4 w-1 rounded-full bg-[#0d9488]"></span>
+    <div class="glass rounded-2xl p-8 relative overflow-hidden transition-all duration-300 hover:border-slate-500 hover:shadow-[0_0_30px_rgba(234,179,8,0.15)] group">
+        <div class="absolute -right-10 -top-10 w-32 h-32 bg-yellow-500/10 blur-[40px] rounded-full pointer-events-none transition-all duration-500 group-hover:bg-yellow-500/20"></div>
+        <h4 class="text-xs font-bold uppercase tracking-widest text-yellow-400 mb-6 flex items-center gap-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-yellow-400 shadow-[0_0_8px_rgba(234,179,8,0.8)]"></span>
             Profile Summary
         </h4>
-        <div class="flex mt-4 flex-col">
-            <p class="text-[15px] leading-relaxed text-slate-600">Detail-oriented and innovative IT professional with extensive experience
-                in web development, software development, and IT administration.
-                Proficient in front-end and back-end technologies, eager to contribute to
-                a dynamic team to deliver high-quality technological solutions.</p>
+        <div class="flex flex-col relative z-10">
+            <p class="text-base font-medium leading-relaxed text-slate-300 group-hover:text-slate-100 transition-colors duration-500">
+                Software Engineer expert in web development and HRIS management. Proficient in bridging technical
+                infrastructure with business efficiency through clean code and data-driven optimization.
+            </p>
         </div>
     </div>
 </template>

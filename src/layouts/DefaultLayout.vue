@@ -1,15 +1,19 @@
 <template>
-  <div class="bg-white text-slate-900 min-h-screen grid place-items-center min-w-screen">
+  <div class="bg-[#0f172a] text-slate-100 min-h-screen relative" :class="{ 'h-screen overflow-hidden': route.name === 'home', 'overflow-x-hidden': route.name !== 'home' }">
+    <!-- Subtle background glows -->
+    <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-cyan-500/10 blur-[120px] pointer-events-none"></div>
+    <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-blue-600/10 blur-[120px] pointer-events-none"></div>
+
     <Header v-if="route.name !== 'NotFound'" />
-    <main class="w-full">
+    <main class="w-full relative z-10 flex flex-col" :class="route.name === 'home' ? 'h-screen justify-center' : 'min-h-screen pt-24'">
       <slot />
     </main>
 
     <!-- Skills Icons -->
     <div v-if="route.name === 'home'"
-      class="px-6 md:px-10 flex absolute flex-wrap w-full justify-center md:justify-between bottom-8 items-center gap-5 md:gap-4 skills-icon">
+      class="px-6 md:px-12 pb-8 absolute bottom-0 left-0 flex flex-wrap w-full justify-center md:justify-between items-center gap-6 md:gap-4 skills-icon z-10">
       <component v-for="(icon, index) in skillIcons" :key="index" :is="icon"
-        class="w-7 md:w-9 transition-transform hover:-translate-y-1" />
+        class="w-6 md:w-8 transition-all duration-300 hover:-translate-y-1 hover:scale-110 drop-shadow-md" />
     </div>
   </div>
 </template>
@@ -31,13 +35,16 @@ import VueIcon from "@/components/icons/VueIcon.vue";
 import Codeigniter from "@/components/icons/Codeigniter.vue";
 import Git from "@/components/icons/Git.vue";
 import Gitlab from "@/components/icons/Gitlab.vue";
+import MakeIcon from "@/components/icons/MakeIcon.vue";
+import ZapierIcon from "@/components/icons/ZapierIcon.vue";
+import N8nIcon from "@/components/icons/N8nIcon.vue";
 import { shallowRef } from "vue";
 
 // Store icons in an array
 const skillIcons = shallowRef([
   Html, Css, Javascript, Bootstrap, Tailwind, VueIcon,
   Php, Codeigniter, Laravel, Mysql, Wordpress,
-  Github, Gitlab, Git
+  Github, Gitlab, Git, MakeIcon, ZapierIcon, N8nIcon
 ]);
 
 const route = useRoute()
@@ -45,11 +52,11 @@ const route = useRoute()
 
 <style scoped>
 .skills-icon > * {
-  color: #94a3b8;
-  transition: color 0.2s ease;
+  color: #475569; /* slate-600 */
 }
 
 .skills-icon > *:hover {
-  color: var(--color-accent, #0d9488);
+  color: #38bdf8; /* light blue for hover glow */
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.5));
 }
 </style>
