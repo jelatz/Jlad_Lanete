@@ -1,23 +1,24 @@
 <template>
     <div class="mx-auto max-w-6xl px-6 pt-32 pb-24 md:pt-40 overflow-x-hidden">
-        <header class="max-w-2xl" data-aos="fade-up" data-aos-duration="800">
-            <p class="text-sm font-medium uppercase tracking-[0.3em] text-[#0d9488]">Selected Work</p>
-            <h1 class="mt-3 text-4xl md:text-5xl font-bold tracking-tight text-slate-900">
+        <header class="max-w-2xl relative" data-aos="fade-up" data-aos-duration="800">
+            <div class="absolute -left-8 top-4 w-20 h-20 bg-blue-500/20 blur-3xl rounded-full pointer-events-none"></div>
+            <p class="text-xs font-bold uppercase tracking-[0.4em] text-cyan-400 drop-shadow-md">Selected Work</p>
+            <h1 class="mt-4 text-4xl md:text-6xl font-bold tracking-tighter text-slate-50">
                 Projects
             </h1>
-            <p class="mt-4 text-base leading-relaxed text-slate-500">
+            <p class="mt-6 text-lg font-light leading-relaxed text-slate-400">
                 A selection of WordPress websites I have designed and developed for clients across
                 healthcare, coaching, and consulting.
             </p>
         </header>
 
-        <section class="mt-14">
-            <div class="flex items-center gap-4">
-                <h2 class="text-sm font-semibold uppercase tracking-widest text-slate-400">WordPress</h2>
-                <span class="h-px flex-1 bg-slate-200"></span>
+        <section class="mt-20 relative">
+            <div class="flex items-center gap-6 mb-12">
+                <h2 class="text-sm font-bold uppercase tracking-widest text-slate-300">WordPress</h2>
+                <div class="h-px flex-1 bg-gradient-to-r from-slate-700 to-transparent"></div>
             </div>
 
-            <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
                 <ProjectCard v-for="wordpressProject in wordpressProjects" :key="wordpressProject.id"
                     :data="wordpressProject" />
             </div>

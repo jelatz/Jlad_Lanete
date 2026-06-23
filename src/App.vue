@@ -13,7 +13,5 @@ const route = useRoute();
 </template>
 
 <style scoped>
-* {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-}
+/* Removed overriding font-family to rely on main.css */
 </style>
