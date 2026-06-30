@@ -11,7 +11,7 @@
                     <h1 class="mt-4 text-lg font-light leading-relaxed text-slate-300">
                         The full CV is best viewed on a desktop. You can download a copy below.
                     </h1>
-                    <a :href="cvPDF" target="_blank" download="JojieLadCV.pdf"
+                    <a :href="cvPDF" target="_blank" download="JojieLadLanete.pdf"
                         class="mt-8 inline-flex items-center rounded-full bg-cyan-500 border border-cyan-400 px-8 py-3 text-sm font-bold text-slate-900 transition-all duration-300 hover:bg-cyan-400 hover:shadow-[0_0_20px_rgba(6,182,212,0.6)]">
                         Download CV
                     </a>
@@ -23,10 +23,10 @@
                 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-purple-500/20 blur-[100px] rounded-full pointer-events-none"></div>
                 <h1 class="text-5xl md:text-7xl font-bold tracking-tighter text-slate-50 relative z-10">Jojie Lad Lanete</h1>
                 <p class="mt-6 text-sm md:text-base font-bold uppercase tracking-[0.4em] text-cyan-400 relative z-10 drop-shadow-md">
-                    Software Engineer <span class="mx-3 text-slate-600">|</span> Automations Engineer
+                    Software Engineer <span class="mx-3 text-slate-600">|</span> AI Engineer
                 </p>
                 <div class="mt-10 relative z-10">
-                    <a :href="cvPDF" target="_blank" download="JojieLadCV.pdf"
+                    <a :href="cvPDF" target="_blank" download="JojieLadLanete.pdf"
                         class="inline-flex items-center gap-3 rounded-full bg-slate-800/80 backdrop-blur-md border border-slate-700 px-8 py-4 text-sm font-semibold text-white transition-all duration-300 hover:bg-cyan-500 hover:border-cyan-400 hover:shadow-[0_0_20px_rgba(6,182,212,0.6)] hover:-translate-y-1">
                         <fai :icon="['fas', 'download']" class="w-4 h-4 text-cyan-400 group-hover:text-white" />
                         Download CV
@@ -56,7 +56,7 @@
 <script setup>
 defineProps({ layout: { type: String, default: "CVLayout" } });
 import { ref, onMounted, onUnmounted } from 'vue';
-import cvPDF from '@/assets/docs/JojieLadCV.pdf';
+import cvPDF from '@/assets/docs/JojieLadLanete.pdf';
 import ContactInfo from '@/components/resume/ContactInfo.vue';
 import EducationInfo from '@/components/resume/EducationInfo.vue';
 import SkillsInfo from '@/components/resume/SkillsInfo.vue';

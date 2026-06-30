@@ -31,7 +31,7 @@ const skills = [
     },
     {
         category: "Frameworks",
-        items: ["Laravel", "CodeIgniter", "WordPress"]
+        items: ["Laravel", "CodeIgniter", "WordPress", "Vue", "Inertia"]
     },
     {
         category: "Databases/Tools",

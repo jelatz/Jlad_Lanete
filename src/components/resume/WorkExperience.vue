@@ -35,8 +35,10 @@ const jobs = [
         role: "AI Automation Engineer",
         period: "February 2026 - Present",
         points: [
-            "Architect, build, and troubleshoot complex autonomous workflows and system integrations using Make.com, n8n, and Zapier.",
-            "Design and deploy Agentic AI solutions and agentic workflows to automate specialized business processes and maximize operational efficiency."
+            "Architected and deployed 15+ multi-agent autonomous workflows using n8n, Make.com, and Zapier, reducing manual data processing time by 40% for enterprise clients.",
+            "Engineered a modular Lead Capture AI Agent integrating Typeform, Calendly, and Close CRM, increasing booking conversion rates by 25%.",
+            "Designed an end-to-end Onboarding AI Agent that automated workspace provisioning across Slack, Google Drive, and Gmail, cutting client onboarding time from 2 hours to under 5 minutes.",
+            "Developed an automated Newsletter Email Agent utilizing OpenRouter to curate, rank, and summarize content from RSS and IMAP feeds, saving editorial teams 10+ hours weekly."
         ],
     },
     {
@@ -44,18 +46,19 @@ const jobs = [
         role: "Software Engineer",
         period: "May 2024 - Present",
         points: [
-            "Optimized client features and secured internal HRIS for reliability and performance.",
-            "Collaborated with cross-functional teams to deploy critical system upgrades.",
-            "Increased user adoption by 20% through training sessions on new functionalities.",
+            "Spearheaded the comprehensive migration of a legacy core Human Resource Information System (HRIS) to a modern Laravel, Vue.js, and Inertia.js stack, reducing page latency by 60%.",
+            "Refactored legacy database schemas and implemented role-based access control (RBAC), securing sensitive data for 1000+ internal active users.",
+            "Designed and integrated a secure 2FA alternative routing one-time passwords via the Openfire REST API to Spark IM clients, decreasing authentication friction by 20%.",
+            "Conducted targeted technical training sessions on new HRIS modules, accelerating internal user adoption by 20% within the first 60 days of launch."
         ],
     },
     {
         company: "Remie Australia",
-        role: "IT Consultant (On-Call)",
+        role: "IT Consultant (Part Time | Concurrent)",
         period: "January 2023 - April 2024",
         points: [
-            "Maintained endpoint security and resolved technical friction for remote contractors.",
-            "Conducted monthly compliance audits and configured specialized client software."
+            "Managed endpoint security and system compliance for a distributed team of 30+ remote contractors, maintaining a 99.8% network uptime rate.",
+            "Executed monthly IT compliance audits and configured secure software environments, reducing device vulnerability flags by 45%."
         ],
     },
     {
@@ -63,17 +66,8 @@ const jobs = [
         role: "Web Developer",
         period: "August 2023 - December 2023",
         points: [
-            "Engineered responsive websites using HTML, CSS, JS, and PHP with a focus on SEO.",
-            "Debugged cross-browser issues and conducted unit testing for code stability.",
-        ],
-    },
-    {
-        company: "American Appraisal Alliance",
-        role: "Real Estate Virtual Assistant",
-        period: "December 2019 - June 2022",
-        points: [
-            "Managed appraisal pipelines and input property data for senior review.",
-            "Produced detailed Market Analyses evaluating sales trends and demographics.",
+            "Developed and launched 150+ custom, responsive WordPress websites using PHP and JavaScript, ensuring 100% cross-browser compatibility.",
+            "Optimized front-end performance and SEO structures, driving an average 15% improvement in Google Lighthouse speed scores."
         ],
     },
 ];

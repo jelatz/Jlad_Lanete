@@ -7,8 +7,8 @@
         </h4>
         <div class="flex flex-col relative z-10">
             <p class="text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-blue-400 transition-colors">2019 &ndash; 2023</p>
-            <p class="mt-3 text-lg font-bold text-slate-200">University of Southern Philippines</p>
-            <p class="mt-1 text-sm font-medium text-slate-400">Bachelor of Information Technology</p>
+            <p class="mt-3 text-lg font-bold text-slate-200">University of Southern Philippines Foundation</p>
+            <p class="mt-1 text-sm font-medium text-slate-400">Bachelor of Science in Information Technology</p>
         </div>
     </div>
 </template>
