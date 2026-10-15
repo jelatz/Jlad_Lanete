@@ -7,7 +7,7 @@
         </h4>
         <div class="flex flex-col relative z-10">
             <p class="text-base font-medium leading-relaxed text-slate-300 group-hover:text-slate-100 transition-colors duration-500">
-                Performance-driven Software and AI Automation Engineer with a track record of architecting autonomous workflows, optimizing backend applications, and executing zero-downtime framework migrations. Expert at bridging complex infrastructures with modular, agentic AI solutions to eliminate operational overhead and maximize efficiency.
+                Detail-oriented Full-Stack Developer with over 2 years of experience developing responsive web applications, building RESTful APIs, and refactoring enterprise HR systems. Proven track record modernizing legacy HRIS architecture, implementing robust role-based access control (RBAC), and optimizing database queries for 1,000+ users. Committed to test-driven development, mobile-first design, and pragmatic AI-assisted workflows with disciplined manual verification.
             </p>
         </div>
     </div>

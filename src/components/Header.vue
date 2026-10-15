@@ -11,16 +11,20 @@
             </a>
         </div>
         <nav class="flex items-center gap-6 md:gap-8 text-slate-400">
-            <RouterLink to="/projects" class="hover:text-cyan-400 transition-colors" v-if="route.name !== 'projects'">
-                <ProjectsIcon />
-            </RouterLink>
-            <RouterLink to="/" class="hover:text-cyan-400 transition-colors" v-else>
+            <RouterLink to="/" class="hover:text-cyan-400 transition-colors" title="Home" v-if="route.name !== 'home'">
                 <HomeIcon />
             </RouterLink>
-            <a href="https://www.linkedin.com/in/jladlanete/" target="_blank" class="hover:text-cyan-400 transition-colors">
+            <RouterLink to="/projects" class="hover:text-cyan-400 transition-colors" title="Projects" v-if="route.name !== 'projects'">
+                <ProjectsIcon />
+            </RouterLink>
+            <RouterLink to="/curriculum-vitae" class="hover:text-cyan-400 transition-colors flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full border border-slate-700 bg-slate-800/40 hover:border-cyan-400 hover:text-cyan-300 transition-all" title="Curriculum Vitae" v-if="route.name !== 'cv'">
+                <fai :icon="['fas', 'file-lines']" class="w-3 h-3 text-cyan-400" />
+                <span>CV</span>
+            </RouterLink>
+            <a href="https://www.linkedin.com/in/JojieLadLanete" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition-colors" title="LinkedIn">
                 <Linkedin />
             </a>
-            <a href="https://github.com/jelatz" target="_blank" class="hover:text-cyan-400 transition-colors">
+            <a href="https://github.com/lanetejlad" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition-colors" title="GitHub">
                 <Github />
             </a>
         </nav>

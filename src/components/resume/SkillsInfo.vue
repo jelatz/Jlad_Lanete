@@ -22,24 +22,20 @@
 <script setup>
 const skills = [
     {
-        category: "Languages",
-        items: ["HTML", "CSS", "JavaScript", "PHP"]
+        category: "Frontend",
+        items: ["React.js", "Next.js", "TypeScript", "JavaScript (ES6+)", "Vite", "Tailwind CSS", "Mobile-First / Responsive UI", "HTML5 / CSS3"]
     },
     {
-        category: "Automation",
-        items: ["Make.com", "n8n", "Zapier", "AI Workflows"]
+        category: "Backend & Databases",
+        items: ["Node.js", "Express", "RESTful APIs", "PostgreSQL", "MySQL", "Database Schema Design", "RBAC", "Authentication (JWT, 2FA)"]
     },
     {
-        category: "Frameworks",
-        items: ["Laravel", "CodeIgniter", "WordPress", "Vue", "Inertia"]
+        category: "Testing & Tools",
+        items: ["Jest", "Vitest", "Git", "GitHub (PRs, Code Reviews)", "Vercel", "Sentry", "Postman"]
     },
     {
-        category: "Databases/Tools",
-        items: ["MySQL", "Git", "GitHub", "GitLab"]
-    },
-    {
-        category: "Competencies",
-        items: ["Full-Stack Development", "System Security", "DB Optimization", "Analytics (Adobe, TMS)"]
+        category: "Workflow & AI Tools",
+        items: ["Cursor", "Claude Code", "GitHub Copilot", "Monday.com", "Automated CI/CD Pipelines"]
     }
 ];
 </script>

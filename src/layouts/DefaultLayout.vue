@@ -38,13 +38,15 @@ import Gitlab from "@/components/icons/Gitlab.vue";
 import MakeIcon from "@/components/icons/MakeIcon.vue";
 import ZapierIcon from "@/components/icons/ZapierIcon.vue";
 import N8nIcon from "@/components/icons/N8nIcon.vue";
+import ReactIcon from "@/components/icons/ReactIcon.vue";
+import NodeIcon from "@/components/icons/NodeIcon.vue";
 import { shallowRef } from "vue";
 
 // Store icons in an array
 const skillIcons = shallowRef([
-  Html, Css, Javascript, Bootstrap, Tailwind, VueIcon,
-  Php, Codeigniter, Laravel, Mysql, Wordpress,
-  Github, Gitlab, Git, MakeIcon, ZapierIcon, N8nIcon
+  ReactIcon, NodeIcon, Javascript, Html, Css, Tailwind, VueIcon,
+  Php, Laravel, Mysql, Wordpress,
+  Github, Git, Gitlab, MakeIcon, ZapierIcon, N8nIcon
 ]);
 
 const route = useRoute()

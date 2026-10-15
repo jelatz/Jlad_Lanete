@@ -8,27 +8,33 @@
         <div class="flex flex-col gap-4 text-sm font-medium text-slate-300 relative z-10">
             <div class="flex items-center gap-4 group/item">
                 <div class="w-8 h-8 rounded-full bg-slate-800/50 flex items-center justify-center border border-slate-700 transition-colors group-hover/item:border-cyan-500 group-hover/item:bg-cyan-500/10">
-                    <fai :icon="['fas', 'phone']" class="w-3 text-cyan-400" />
+                    <fai :icon="['fas', 'envelope']" class="w-3 text-cyan-400" />
                 </div>
-                <a href="tel:+639760275569" class="hover:text-cyan-300 transition-colors">+639760275569</a>
+                <a href="mailto:lanetejlad@gmail.com" class="hover:text-cyan-300 transition-colors truncate">lanetejlad@gmail.com</a>
             </div>
             <div class="flex items-center gap-4 group/item">
                 <div class="w-8 h-8 rounded-full bg-slate-800/50 flex items-center justify-center border border-slate-700 transition-colors group-hover/item:border-cyan-500 group-hover/item:bg-cyan-500/10">
-                    <fai :icon="['fas', 'envelope']" class="w-3 text-cyan-400" />
+                    <fai :icon="['fas', 'phone']" class="w-3 text-cyan-400" />
                 </div>
-                <a href="mailto:lanetejlad@gmail.com" class="hover:text-cyan-300 transition-colors">lanetejlad@gmail.com</a>
+                <a href="tel:+639760275569" class="hover:text-cyan-300 transition-colors">+63 976 027 5569</a>
             </div>
             <div class="flex items-center gap-4 group/item">
                 <div class="w-8 h-8 rounded-full bg-slate-800/50 flex items-center justify-center border border-slate-700 transition-colors group-hover/item:border-cyan-500 group-hover/item:bg-cyan-500/10">
                     <fai :icon="['fas', 'map-marker-alt']" class="w-3 text-cyan-400" />
                 </div>
-                <span>Cebu City, Philippines</span>
+                <span>Remote (Philippines)</span>
             </div>
             <div class="flex items-center gap-4 group/item">
                 <div class="w-8 h-8 rounded-full bg-slate-800/50 flex items-center justify-center border border-slate-700 transition-colors group-hover/item:border-cyan-500 group-hover/item:bg-cyan-500/10">
-                    <fai :icon="['fas', 'globe']" class="w-3 text-cyan-400" />
+                    <fai :icon="['fab', 'linkedin']" class="w-3 text-cyan-400" />
                 </div>
-                <a href="https://jladlanete.vercel.app" class="hover:text-cyan-300 transition-colors">jladlanete.vercel.app</a>
+                <a href="https://www.linkedin.com/in/JojieLadLanete" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-300 transition-colors truncate">linkedin.com/in/JojieLadLanete</a>
+            </div>
+            <div class="flex items-center gap-4 group/item">
+                <div class="w-8 h-8 rounded-full bg-slate-800/50 flex items-center justify-center border border-slate-700 transition-colors group-hover/item:border-cyan-500 group-hover/item:bg-cyan-500/10">
+                    <fai :icon="['fab', 'github']" class="w-3 text-cyan-400" />
+                </div>
+                <a href="https://github.com/lanetejlad" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-300 transition-colors truncate">github.com/lanetejlad</a>
             </div>
         </div>
     </div>

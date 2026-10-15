@@ -11,7 +11,10 @@
                 <span class="absolute -left-[31px] top-1 h-3 w-3 rounded-full bg-slate-800 border-2 border-slate-600 group-hover/item:border-red-400 group-hover/item:bg-red-500 transition-colors shadow-[0_0_10px_rgba(239,68,68,0)] group-hover/item:shadow-[0_0_10px_rgba(239,68,68,0.8)]"></span>
                 
                 <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 mb-2">
-                    <h5 class="text-xl font-bold text-slate-100 group-hover/item:text-red-400 transition-colors">{{ job.company }}</h5>
+                    <h5 class="text-xl font-bold text-slate-100 group-hover/item:text-red-400 transition-colors">
+                        {{ job.company }}
+                        <span v-if="job.location" class="text-sm font-normal text-slate-400"> — {{ job.location }}</span>
+                    </h5>
                     <p class="text-xs font-bold uppercase tracking-widest text-slate-500">{{ job.period }}</p>
                 </div>
                 <p v-if="job.role" class="mb-5 text-sm font-bold text-slate-400 group-hover/item:text-slate-300 transition-colors">{{ job.role }}</p>
@@ -31,43 +34,38 @@
 <script setup>
 const jobs = [
     {
-        company: "DobotAI",
-        role: "AI Automation Engineer",
-        period: "February 2026 - Present",
-        points: [
-            "Architected and deployed 15+ multi-agent autonomous workflows using n8n, Make.com, and Zapier, reducing manual data processing time by 40% for enterprise clients.",
-            "Engineered a modular Lead Capture AI Agent integrating Typeform, Calendly, and Close CRM, increasing booking conversion rates by 25%.",
-            "Designed an end-to-end Onboarding AI Agent that automated workspace provisioning across Slack, Google Drive, and Gmail, cutting client onboarding time from 2 hours to under 5 minutes.",
-            "Developed an automated Newsletter Email Agent utilizing OpenRouter to curate, rank, and summarize content from RSS and IMAP feeds, saving editorial teams 10+ hours weekly."
-        ],
-    },
-    {
         company: "CTC BPO",
+        location: "Cebu, Philippines",
         role: "Software Engineer",
-        period: "May 2024 - Present",
+        period: "May 2024 – Present",
         points: [
-            "Spearheaded the comprehensive migration of a legacy core Human Resource Information System (HRIS) to a modern Laravel, Vue.js, and Inertia.js stack, reducing page latency by 60%.",
-            "Refactored legacy database schemas and implemented role-based access control (RBAC), securing sensitive data for 1000+ internal active users.",
-            "Designed and integrated a secure 2FA alternative routing one-time passwords via the Openfire REST API to Spark IM clients, decreasing authentication friction by 20%.",
-            "Conducted targeted technical training sessions on new HRIS modules, accelerating internal user adoption by 20% within the first 60 days of launch."
+            "Built and refactored core modules for an enterprise Human Resource Information System (HRIS) serving 1,000+ active internal users, reducing page latency by 60%.",
+            "Developed component-driven, responsive UI screens using React, ensuring seamless mobile and desktop usability.",
+            "Designed and maintained secure REST API endpoints, normalized database schemas, and implemented strict Role-Based Access Control (RBAC) to safeguard sensitive payroll and workforce data.",
+            "Authored automated unit and integration tests (Jest) for core business logic, permissions, and calculations prior to shipping code.",
+            "Built a custom two-factor authentication (2FA) service routing one-time passwords via REST APIs, cutting login friction by 20% while enhancing account security.",
+            "Leveraged AI coding assistants (Cursor, Copilot) with rigorous code review, test verification, and debugging to accelerate sprint delivery while maintaining 100% code quality standards.",
+            "Collaborated via Git/GitHub through structured branches, descriptive pull request documentation, and active peer code reviews."
         ],
     },
     {
         company: "Remie Australia",
-        role: "IT Consultant (Part Time | Concurrent)",
-        period: "January 2023 - April 2024",
+        location: "Remote",
+        role: "IT Systems Consultant (Part-Time)",
+        period: "January 2023 – April 2024",
         points: [
-            "Managed endpoint security and system compliance for a distributed team of 30+ remote contractors, maintaining a 99.8% network uptime rate.",
-            "Executed monthly IT compliance audits and configured secure software environments, reducing device vulnerability flags by 45%."
+            "Managed system configurations, endpoint security, and compliance protocols across a distributed remote team of 30+ contractors, sustaining a 99.8% network uptime rate.",
+            "Conducted regular security audits and configured secure developer environments, decreasing vulnerability flags by 45%."
         ],
     },
     {
         company: "Proweaver Inc.",
+        location: "Cebu, Philippines",
         role: "Web Developer",
-        period: "August 2023 - December 2023",
+        period: "August 2023 – December 2023",
         points: [
-            "Developed and launched 150+ custom, responsive WordPress websites using PHP and JavaScript, ensuring 100% cross-browser compatibility.",
-            "Optimized front-end performance and SEO structures, driving an average 15% improvement in Google Lighthouse speed scores."
+            "Developed and deployed 150+ custom, mobile-responsive web applications using modern JavaScript and PHP, maintaining 100% cross-browser and cross-device compatibility.",
+            "Optimized asset delivery, DOM structure, and critical rendering paths, driving an average 15% increase in Google Lighthouse performance scores."
         ],
     },
 ];
